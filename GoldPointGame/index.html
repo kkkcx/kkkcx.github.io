@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>GoldPointGame</title>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/settings.js" ></script> 
+<script src="js/echarts-all.js"></script>
+<link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+  <div class="showTime">当前时间：2020年3月17-0时54分14秒</div>
+  <script>
+    var t = null;
+    t = setTimeout(time, 1000); //開始运行
+    function time() {
+      clearTimeout(t); //清除定时器
+      dt = new Date();
+      var y = dt.getFullYear();
+      var mt = dt.getMonth() + 1;
+      var day = dt.getDate();
+      var h = dt.getHours(); //获取时
+      var m = dt.getMinutes(); //获取分
+      var s = dt.getSeconds(); //获取秒
+      document.querySelector(".showTime").innerHTML =
+        "当前时间：" +
+        y +
+        "年" +
+        mt +
+        "月" +
+        day +
+        "-" +
+        h +
+        "时" +
+        m +
+        "分" +
+        s +
+        "秒";
+      t = setTimeout(time, 1000); //设定定时器，循环运行
+    }
+  </script>
+<div id="container">
+<h2> 黄金点游戏</h2>
+<div id="div1">
+	<div id="CreateGame">
+    	<table>
+
+        <tr>
+        <td>玩家人数:</td>
+        <td><input type="text" id="num" class=""></td>
+        </tr>
+        <tr>
+        <td>游戏轮次：</td>
+        <td><input type="text" id="lun" class=""></td>
+        </tr>        
+        </table>
+        <table>
+        <tr align="center"><td><button id="create">创建游戏</button></td><td><button id="test">模拟游戏</button></td></tr>
+        
+        </table>
+        </div>
+</div>
+<div id="input">
+      <table>
+        <tr align="center" id="title">
+          <td colspan="3">本次游戏共<span class="lun"></span>轮，玩家人数为<span  class="num"></span>人</td>
+        </tr>
+        <tr align="center" id="now">
+          <td colspan="3">当前轮次：第<span class="lun">1</span>轮，当前玩家为：玩家<span  class="num">1</span></td>
+        </tr>
+        <tr>
+          <td align="right">请输入数字：</td>
+          <td><input type="text" name="val" class="val"></td>
+          <td><span style="color:red;">(提示！0~100之间的有理数,不包括0或100)</span></td>
+        </tr>
+        <tr align="center">
+          <td colspan="3"><button id="submit">提交</button></td>
+        </tr>
+      </table>
+    </div>
+    <table id="res" border='1px' style="margin-bottom:160px"></table>
+</div>
+<p>四川大学软件工程课程设计</p>
+<p>胡斌 康采新</p>
+<a href="mailto:1127235750@qq.com">联系我们</a>
+</body>
+</html>
