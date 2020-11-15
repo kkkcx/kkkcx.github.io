@@ -451,6 +451,17 @@ getVoices 获取支持的语言数组. 注意:必须添加在voiceschanged事件
  + 进行项目构建  
  + 进行编码改进  
  + 进行代码测试  
+ 
+```flow
+st=>start: 开始
+op=>operation: My Operation
+cond=>condition: Yes or No?
+e=>end
+st->op->cond
+cond(yes)->e
+cond(no)->op
+& 
+```
 
 ## 五.风险分析及解决办法  
 
@@ -459,4 +470,43 @@ getVoices 获取支持的语言数组. 注意:必须添加在voiceschanged事件
 
 解决办法：  
 加强交流沟通，理解需求  
+
+## 六.代码展示
+
+语音播报：
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <input type="text" id="audio">
+    <input type="button" id="tts_btn" onclick="test()" value="播放">
+</div>
+
+<script type="text/javascript">
+    var speechSU = new window.SpeechSynthesisUtterance();
+    function test(){
+        let msg = new SpeechSynthesisUtterance("欢迎来到黄金点游戏");
+        console.log(msg)
+        //msg.rate = 4 播放语速
+        //msg.pitch = 10 音调高低
+        //msg.text = "播放文本"
+        //msg.volume = 0.5 播放音量
+        speechSynthesis.speak(msg);
+
+        // var speechSU = new window.SpeechSynthesisUtterance();
+        // function test(){
+        //     var text = document.getElementById(‘audio‘).value;
+        //     speechSU.text = text;
+        //     window.speechSynthesis.speak(speechSU);
+    }
+</script>
+
+</body>
+</html>
+```
 
