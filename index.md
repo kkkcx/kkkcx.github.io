@@ -380,6 +380,7 @@ function count(array,num,lun){
 </body>
 ```
 
+
 # 第12周周报
 
 ## 一.本周课设要求
@@ -452,17 +453,7 @@ getVoices 获取支持的语言数组. 注意:必须添加在voiceschanged事件
  + 进行编码改进  
  + 进行代码测试  
  
-```flow
-st=>start: 开始
-op=>operation: My Operation
-cond=>condition: Yes or No?
-e=>end
-st->op->cond
-cond(yes)->e
-cond(no)->op
-& 
-```
-
+ 
 ## 五.风险分析及解决办法  
 
 风险分析：  
@@ -474,7 +465,7 @@ cond(no)->op
 ## 六.代码展示
 
 语音播报：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
