@@ -500,4 +500,35 @@ getVoices 获取支持的语言数组. 注意:必须添加在voiceschanged事件
 </body>
 </html>
 ```
+登陆界面：
+
+```html
+<body>
+<!-- contact -->
+<div class="contact" id="contact">
+	<div class="container">
+		<div class="about-heading">
+			<h3>欢迎登录黄金点游戏</h3>
+			<p>May the odds be ever in your favour.</p>
+		</div>
+		<div class="w3l-about-grids">
+			<div class="contact-w3ls-row">
+				<form action="index.html" method="post">
+					<div class="col-md-7 col-sm-7 contact-left agileits-w3layouts" style="margin-left:20%">
+						<input type="text" name="user_id" placeholder="请输入用户名" required="">
+						<input class="email" name="Last Name" type="text" placeholder="请输入密码" required="">
+						<input type="submit" value="SUBMIT">
+					</div>
+					<div class="clearfix"> </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+```
+## 七.界面展示
+
+
+
+
 
