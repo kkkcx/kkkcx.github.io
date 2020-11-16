@@ -425,7 +425,6 @@ function count(array,num,lun){
 1.改进黄金点游戏逻辑  
 
 2.增加客户端登陆界面、用户登录
-<img src="kkkcx.github.io/">
 
 3.美化黄金点游戏设计ui界面  
 
