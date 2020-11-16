@@ -1,4 +1,12 @@
+
+## 目录：
+
 ### 第8周周报
+### 第10周周报
+### 第12周周报
+
+
+## 第8周周报
 
 一.本周课设要求
 
@@ -528,8 +536,13 @@ getVoices 获取支持的语言数组. 注意:必须添加在voiceschanged事件
 ```
 ## 七.界面展示
 
+登陆界面：
 ![avatar](https://raw.githubusercontent.com/kkkcx/kkkcx.github.io/main/image/1.png)
+
+玩家输入数据：
 ![avatar](https://raw.githubusercontent.com/kkkcx/kkkcx.github.io/main/image/2.png)
+
+结果展示：
 ![avatar](https://raw.githubusercontent.com/kkkcx/kkkcx.github.io/main/image/3.png)
 
 
