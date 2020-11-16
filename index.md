@@ -528,7 +528,9 @@ getVoices 获取支持的语言数组. 注意:必须添加在voiceschanged事件
 ```
 ## 七.界面展示
 
-
+![avatar](https://raw.githubusercontent.com/kkkcx/kkkcx.github.io/main/image/1.png)
+![avatar](https://raw.githubusercontent.com/kkkcx/kkkcx.github.io/main/image/2.png)
+![avatar](https://raw.githubusercontent.com/kkkcx/kkkcx.github.io/main/image/3.png)
 
 
 
