@@ -10,7 +10,7 @@
 
 [第12周周报](#第12周周报)
 
-
+[第14周周报](#第14周周报)
 # 第8周周报
 
 一.本周课设要求
@@ -552,3 +552,285 @@ getVoices 获取支持的语言数组. 注意:必须添加在voiceschanged事件
 
 
 
+# 第14周周报
+ 13-14周的主要任务是完成系统最后的附加功能的实现以及系统的整体调试过程，其中包括语音提示信息以及可视化的实现和UI设计最后的修改部分以及运用人工智能的算法分析。由于大部分功能仍处于调试阶段，本周周报未能展示项目正在制作的全部内容
+
+> ## <font color ="#AB0D00">语音提示信息</font>
+>
+> ```javascript
+> $(function(){
+>     $('#submit').click(function(event)
+>     {
+>         speak('亲爱的 请填写玩家数量欧');
+>     });
+> });//玩家数量语音提示
+> 
+> //创建游戏语音提示
+> if(num == '')
+> 		{
+>           
+>           speak('亲爱的 请填写玩家数量欧');
+>           return false;
+>         }
+> 		else if(num>50)
+> 		{
+>          
+>           speak('亲爱的 游戏玩家最多为50人！');
+>           return false;
+>         }
+>         if(lun == '')
+> 		{
+>           
+>           speak('亲爱的 填写游戏轮次！');
+>           return false;
+>         }
+> 		else if(lun<2)
+> 		{
+>           
+>           speak('亲爱的 游戏轮次最少为2轮！');
+>           return false;
+>         
+>     }
+> 
+> 
+> 
+> //游戏轮数语音提示信息
+>  speak('本轮游戏结束啦，进入下一轮游戏！');
+> //游戏结束
+> speak('本次游戏结束！ 下面我要公布结果了');
+> //结果公布
+> speak(winner+'请大家恭喜他');
+>         speak(loser+'真是菜鸡');
+>         speak('具体统计数据请大家查看统计表');
+>         speak('谢谢大家 下次再见');
+> 
+> //speak函数定义及设置
+> function speak(x){
+>     var msg = new SpeechSynthesisUtterance(x);
+>     // msg.text = document.getElementById("audio").value;
+>     // console.log(msg)
+>     msg.rate = 1.0 //播放语速
+>     msg.pitch = 1.2 //音调高低
+>     // msg.text = "播放文本"
+>     msg.volume = 1 //播放音量
+>     speechSynthesis.speak(msg);
+> }
+> ```
+>
+> 同时我们注意到在不同的设备和浏览器上存在语音可能无法正常播放的问题，所以本周的重要工作之一即是完成这一部分的调试工作
+
+> ## <font color ="#AB0D00">结果可视化</font>
+>
+> ### 计算可视化数据
+>
+> ```javascript
+> function count(array,num,lun){
+>         var data = array;
+>         let s = [];
+>         //初始化数组
+>         for(var a=1;a<=lun;a++){
+>             s[a] = [];
+>             for(var b=1;b<=num;b++){
+>                 s[a][b] = 0;
+>             }
+>         }
+>         var str = '<tr><td>&nbsp;</td>';
+>         for(var a=1;a<=num;a++){
+>           str += "<td>玩家"+a+"</td>";
+>         }
+>         str += "<td>总计</td><td>平均</td><td>G</td></tr>";
+>         
+>         for(var a=1;a<=lun;a++){
+>             var sum = 0;
+>             str += "<tr><td>第"+a+"轮</td>";
+>             for(var b=1;b<=num;b++){
+>                 sum  += parseInt(data[a][b]);
+>                 //str += "<td>"+data[a][b]+"</td>";
+>             }
+>             var avg = sum/num;
+>             var G = 0.618*avg;
+>             //获取最大、最小
+>             var max = Math.abs(data[a][1] - G);  
+>             var min = Math.abs(data[a][1] - G);
+>             for(var b=1;b<=num;b++)
+> 			{
+>               if(Math.abs(data[a][b] - G) >= max)
+> 			  {
+>                 max = Math.abs(data[a][b] - G);
+>               }
+>               if(Math.abs(data[a][b] - G) <=min)
+> 			  {
+>                 min = Math.abs(data[a][b] - G);
+>               }
+>             }
+>             for(var b=1;b<=num;b++){
+>               var score = 0;
+>               var color = '';
+>               if(Math.abs(data[a][b]-G) == max){
+>                 score = -2;
+>                 color = 'red';
+>               }
+>               if(Math.abs(data[a][b]-G) == min){
+>                 score = num;
+>                 color = 'red';
+>               }  
+>              
+>               /*str += "<td>"+data[a][b]+"("+s+")"+score+","+max_index+","+min_index+"</td>";*/
+>               s[a][b] = score;
+>               str += "<td style='color:"+color+"'>"+data[a][b]+"("+score+")</td>";
+>               
+>             }
+>             str += "<td>"+sum+"</td><td>"+avg+"</td><td>"+G+"</td></tr>";
+>         }
+>          // var res = [];
+>         str += '<tr><td>计分</td>';
+>         for(var b=1;b<=num;b++){
+>           var sum = 0;
+>           for(var a=1;a<=lun;a++){
+>             sum  += parseInt(s[a][b]);
+>           }
+>           res[b] = sum;
+>         }
+>         var max_res = res[1];
+>         var min_res = res[1];
+>         for(var c=2;c<=num;c++){
+>           if(res[c] > max_res){
+>             max_res = res[c];
+>           }
+>           if(res[c] < min_res){
+>             min_res = res[c];
+>           }
+>         }
+>         var winner = '';
+>         var loser = '';
+>         for(var c=1;c<=num;c++){
+>           var res_color = '';
+>           if(res[c] == max_res){
+>             res_color = 'red';
+>             winner += '玩家'+c+',';
+>           }
+>           if(res[c] == min_res){
+>             res_color = 'red';
+>             loser += '玩家'+c+',';
+>           }
+>           str += "<td style='color:"+res_color+"'>"+res[c]+"</td>";
+>         }
+>         winner += '获胜<br>';
+>         loser += '输了';
+>  
+>         str += "<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+>         var col = parseInt(num)+3;
+>         str += "<tr><td>结果</td><td style='color:#ff0000' colspan='"+col+"'>"+winner+loser+"</td></tr>";
+>         $('#res').html(str);
+>         speak(winner+'请大家恭喜他');
+>         speak(loser+'真是菜鸡');
+>         speak('具体统计数据请大家查看统计表');
+>         speak('谢谢大家 下次再见');
+>         return res;
+>     }
+> ```
+>
+> 
+>
+> ### 热力图数据处理
+>
+> ```javascript
+>  function getmap(array,lun,num){
+>         var datalist = array;
+>         var datamap = [];
+>         var data = [];
+> 
+>         //数组初始化
+>         data[0]= [1,2,3,4,5,6,7,8,9];
+>         for(var i=0;i<data[0].length;i++){
+>             data[0][i] = 0;
+>         }
+>         for (var i=1;i<10;i++){
+>             for (var j=0;j<10;j++){
+>                 data[i][j] = 0;
+>             }
+>         }
+>         for (var i=1;i<=lun;i++){
+>             for (var j=1;j<=num;j++){
+>                   datamap.push(datalist[i][j])
+>             }
+>         }
+>         for (var i=1;i<=datamap.length;i++){
+>              var decade = 0;
+>              var unit = 0;
+>              decade=datamap[i]/10;
+>              unit = datamap[i]%10;
+>              data[decade][unit]++;
+>         }
+>         return data;
+>     }
+> ```
+>
+> ### 得分饼状图实现
+>
+> ```javascript
+> function Echarts(array,num,lun){
+>         var myChart = echarts.init(document.getElementById('gamescore'));
+>         var data=[];
+>         for (var i=1;i<=num;i++){
+>             data[i-1] = array[i];
+>         }
+> 
+>         option = {
+>             title: {
+>                 text: '游戏得分',
+>             },
+>             tooltip: {
+>                 trigger: 'axis',
+>                 axisPointer: {
+>                     type: 'shadow'
+>                 }
+>             },
+>             legend: {
+>                 data:''
+>             },
+>             grid: {
+>                 left: '3%',
+>                 right: '4%',
+>                 bottom: '50%',
+>                 containLabel: true
+>             },
+>             xAxis: {
+>                 type: 'value',
+>                 boundaryGap: false,//[0, 0.01]
+>             },
+>             yAxis: [{
+>                 type: 'category',
+>                 data: function(){
+>                     var player=[];
+>                     for (var i=0;i<num;i++){
+>                         player.push('玩家'+(i+1));
+>                     }
+>                     return player;
+>                 }()
+> 
+>             }],
+>             series: [
+>                 {
+>                     type: 'bar',
+>                     data: data
+>                 },
+>             ]
+>         };
+>         myChart.setOption(option,true);
+>         charts.push(myChart);
+>     };
+> ```
+>
+> 我们已经实现了饼状图得分统计的动态实现，之后我们会将热力图的制作完成，并依据既定的设计规划，将所有可视化内容实现并对UI进行美化
+## 问题总结
+
+1. 语音和可视化内容中调节出现问题
+2. 深度学习算法分析接口和实际结果不理想
+3. 调试时间过长导致项目进展低于预期
+
+## 预计项目进度
+
+1. 因为框架内容已全部修改完毕，所以预计项目仍可以在2020/12/04-05完成
+2. 本周可实现项目剩下的基本内容
+3. 由于新增的用户填写用户名注册页面已经初步完成，预计接口调用和调试将在两天内完成，项目整体功能实现已经趋于完善，所以项目整体实现结果仍可满足预期 
