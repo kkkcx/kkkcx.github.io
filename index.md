@@ -821,7 +821,8 @@ getVoices 获取支持的语言数组. 注意:必须添加在voiceschanged事件
 >         charts.push(myChart);
 >     };
 > ```
->
+>饼状图：
+>![avatar](https://raw.githubusercontent.com/kkkcx/kkkcx.github.io/main/image/score_chart.png)
 > 我们已经实现了饼状图得分统计的动态实现，之后我们会将热力图的制作完成，并依据既定的设计规划，将所有可视化内容实现并对UI进行美化
 ## 问题总结
 
