@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Caixin Kang (康彩新)"
+title                    : "Caixin Kang"
 title_separator          : "-"
 name                     : &name "Caixin Kang"
 description              : &description "PhD student at the university of Tokyo"
