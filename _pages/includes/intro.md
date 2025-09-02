@@ -1,3 +1,0 @@
-Hi, I am a Ph.D. student at [Sato lab](https://www.ut-vision.org/), the University of Tokyo, supervised by Prof. [Yoichi Sato](https://sites.google.com/ut-vision.org/ysato/). I got my M.E. degree from State Key Laboratory of VR Technology and Systems, Beihang University in 2023, advised by Prof. [Feng Lu](http://shi.buaa.edu.cn/lufeng/en/index.htm) ([PHI-AI](https://phi-ai.buaa.edu.cn/)). Previously, I received my B.E. degree in Software Engineering from Shandong University in 2020.
-
-**My research interests** are centered around video understanding and human-computer interaction. Currently, my work focuses primarily on egocentric vision and its applications, particularly in embodied AI. In the past, I have researched hand pose estimation and gaze estimation tasks.
