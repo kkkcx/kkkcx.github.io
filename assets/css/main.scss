@@ -55,17 +55,24 @@
         display: flex;
         width: 100%;
         order: 2;
+        position: relative;
         img {
             max-width: 280px;
             max-height: 210px;
             box-shadow: 3px 3px 6px #888;
             object-fit: cover;
+            display: block;
         }
     }
     
     .paper-box-text{
         max-width: 100%;
         order: 1;
+        h3 {
+            margin: 0.2em 0 0.4em;
+            line-height: 1.25;
+            font-weight: 700;
+        }
     }
     
     @include breakpoint($medium) {
@@ -98,12 +105,14 @@ h1:before, .anchor:before {
     margin-top: -$scroll_offset;
 }
 
-.badge {
+.paper-box .badge {
     padding-left: 1rem;
     padding-right: 1rem;
     position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
+    /* replace margins with absolute offsets for reliable overlay */
+    top: .5em;
+    left: .5em;
+    z-index: 1;
     color: white;
     background-color: #00369f;
     font-size: .8em;
