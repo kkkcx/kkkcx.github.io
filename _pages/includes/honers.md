@@ -1,11 +1,8 @@
-# 🏆 Awards
+# 🏆 Honors & Awards
 -----
-- [JSPS Research Fellowship for Young Scientists DC2](https://www.jsps.go.jp/), 2025
-- Outstanding Master's Thesis at BSIG 2024.
-- [CVPR Outstanding Reviewer Award](https://www.computer.org/csdl/proceedings-article/cvpr/2024/530000z352/20hQ1juBJfi), 2024. 
-- [SPRING GX Project](https://www.cis-trans.jp/spring_gx/index-e.html), 2024.
-- The University of Tokyo Doctoral Fellowship (IIW), 2023.
-- Outstanding Graduate Student of Beihang University, 2023.
-- Bachelor of Honours of Shandong University, 2020.
-- Outstanding Graduate Student of Shandong University, 2020.
-- National Scholarship, the Ministry of Education of China, 2017.
+- Advanced AI Talent Development to Lead the Next-Generation Intelligent Society (BOOST NAIS), Japan Science and Technology Agency (JST), 2025
+- Outstanding Graduate of Beihang University, 2025.
+- National Scholarship, the Ministry of Education of China, 2024.
+- Hisense Scholarship Recipient, Hisense Group Co., Ltd., 2023.
+- Outstanding Graduate of Sichuan Province, Provincial Department of Education, 2022.
+- Zili Zhidong Scholarship, Sichuan University, 2021.
