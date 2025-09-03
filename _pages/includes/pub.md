@@ -36,7 +36,7 @@ IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>TPAMI</s
 <br />
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div>
-<img src='images/papers/2025-nsfw.png' alt="sym" width="100%"></div></div>
+<img src='images/papers/2025-nsfw-v2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 ### Towards NSFW-Free Text-to-Image Generation via Safety-Constraint Direct Preference Optimization
 <p style="line-height:1.0">
@@ -124,7 +124,7 @@ European Conference on Computer Vision (<strong>ECCV</strong>), 2024 <br />
 <br />
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div>
-<img src='images/papers/2023-cvpr-bench.png' alt="sym" width="100%"></div></div>
+<img src='images/papers/2023-cvpr-bench-v2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 ### Benchmarking robustness of 3d object detection to common corruptions in autonomous driving
 <p style="line-height:1.0">
@@ -142,7 +142,7 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</st
 <br />
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div>
-<img src='images/papers/2022-viewfool.png' alt="sym" width="100%"></div></div>
+<img src='images/papers/2022-viewfool.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 ### Viewfool: Evaluating the Robustness of Visual Recognition to Adversarial Viewpoints
 <p style="line-height:1.0">
