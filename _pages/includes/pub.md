@@ -26,7 +26,7 @@ Under Review, 2025 <br />
 <font size="2">
 Xingxing Wei(advisor), Caixin Kang, Yinpeng Dong, Zhengyi Wang, Shouwei Ruan, Yubo Chen, Hang Su <br />
 IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>TPAMI</strong>), 2025 <br /> 
-<a href="https://ieeexplore.ieee.org/abstract/document/11114945">Paper</a>
+<a href="https://ieeexplore.ieee.org/abstract/document/11114945">Paper</a> | 
 <a href="https://github.com/kkkcx/DIFFender">Code</a>
 <br />
 </font>
