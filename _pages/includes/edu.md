@@ -6,4 +6,4 @@
 - *2018.09 - 2022.06*, B.E. in  Computer Science and Technology, Sichuan University. 
 
 # 🌍 Visiting Map
-<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=17MSicXBw0pfelgGnaR1IbAe6PO5DZFKrhRwmdncjtA"></script>
+<a href="https://mapmyvisitors.com/web/1bz49"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=39stm5Opsx_0AY2Yb8WV2qUptsgWP2X31Vwka5-znho&cl=ffffff" /></a>
