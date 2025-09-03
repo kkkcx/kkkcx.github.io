@@ -1,11 +1,10 @@
 # 🔥 News
 ----
-- *[June, 2025]*: &nbsp;🎉 One paper has been accepted by [ICCV](https://iccv.thecvf.com/) 2025.
-- *[December, 2024]*: &nbsp;🎉 I am luckily accepted by [JSPS Research Fellowship for Young Scientists DC2](https://www.jsps.go.jp/).
-- *[August, 2024]*: &nbsp;🎉 One paper has been accepted by [IJCV](https://link.springer.com/journal/11263).
-- *[August, 2024]*:  🎉 Our [AssemblyHands-S2D](https://hands-workshop.org/challenge2024.html) challenge has been open.
-- *[July, 2024]*:  🎉 Two [ECCV](https://eccv2024.ecva.net/) papers have been accepted. One of them is accepted as **Oral presentation**!
-<!-- - *[March, 2024]*: &nbsp;🎉 I start my internship at [CVML@NUS](https://cvml.comp.nus.edu.sg/). -->
-- *[February, 2024]*: &nbsp;🎉 Our `S2DHand` has been accepted by [CVPR](https://cvpr2024.thecvf.com/) 2024.
-- *[December, 2023]*: &nbsp;🎉 Our `PnP-GA+` has been accepted by [TPAMI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34).
-<!-- - *[December, 2023]*: &nbsp;🎉 Our `UVAGaze` has been accepted by [AAAI](https://aaai.org/aaai-conference/) 2024. -->
+- *[August, 2025]*: &nbsp;🎉 One paper has been accepted by [TPAMI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34).
+- *[June, 2025]*: &nbsp;🎉 Two papers have been accepted by [ICCV](https://iccv.thecvf.com/) 2025.
+- *[March, 2025]*: &nbsp;🎉 Luckily Selected for the [Advanced AI Talent Development to Lead the Next-Generation Intelligent Society (BOOST NAIS)](https://spring-gx.adm.s.u-tokyo.ac.jp/en/boost/) Program by Japan Science and Technology Agency (JST).
+- *[July, 2024]*:  🎉 One paper have been accepted by [ECCV](https://eccv2024.ecva.net/) 2024.
+- *[May, 2024]*: &nbsp;🎉 Our team won the second place 🥈 in [The Robodrive Challenge, Track 1: Robust BEV Detection](https://robodrive-24.github.io/), in ICRA 2024.
+- *[May, 2024]*: &nbsp;🎉 Our team won the second place 🥈 in [The Robodrive Challenge, Track 5: Robust Multi-Modal BEV Detection](https://robodrive-24.github.io/), in ICRA 2024.
+- *[February, 2023]*: &nbsp;🎉 One paper has been accepted by [CVPR](https://cvpr2024.thecvf.com/) 2023.
+- *[September, 2022]*: &nbsp;🎉 One paper has been accepted by [NeurIPS](https://neurips.cc/Conferences/2022) 2022.
