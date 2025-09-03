@@ -159,3 +159,37 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</st
 </div>
 <br />
 
+## Competitions:
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div>
+<img src='images/papers/robodrive-track1.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+###  The Robodrive Challenge, Track 1: Robust BEV Detection
+<p style="line-height:1.0">
+<font size="2">
+Our team (Caixin Kang, Xinning Zhou, Chengyang Ying, Wentao Shang, Xingxing Wei, Yinpeng Dong) won the second place 🥈  <br /> 
+IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>), 2024 <br /> 
+<a href="https://robodrive-24.github.io/">The Robodrive Challenge</a>
+<br />
+</font>
+</p>
+</div>
+</div>
+<br />
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div>
+<img src='images/papers/robodrive-track5.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+###  The Robodrive Challenge, Track 5: Robust Multi-Modal BEV Detection
+<p style="line-height:1.0">
+<font size="2">
+Our team (Caixin Kang, Xinning Zhou, Chengyang Ying, Wentao Shang, Xingxing Wei, Yinpeng Dong) won the second place 🥈  <br /> 
+IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>), 2024 <br /> 
+<a href="https://robodrive-24.github.io/">The Robodrive Challenge</a>
+<br />
+</font>
+</p>
+</div>
+</div>
+<br />
+
