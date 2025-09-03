@@ -1,4 +1,4 @@
-# 🏆 Honors & Awards
+# 🏆 Awards
 -----
 - Advanced AI Talent Development to Lead the Next-Generation Intelligent Society (BOOST NAIS), Japan Science and Technology Agency (JST), 2025
 - Outstanding Graduate of Beihang University, 2025.
