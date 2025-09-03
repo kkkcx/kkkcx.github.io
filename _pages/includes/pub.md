@@ -162,7 +162,7 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</st
 ## Competitions:
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div>
-<img src='images/papers/robodrive-track1.jpg' alt="sym" width="100%"></div></div>
+<img src='images/papers/robodrive-track1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 ###  The Robodrive Challenge, Track 1: Robust BEV Detection
 <p style="line-height:1.0">
@@ -178,7 +178,7 @@ IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>)
 <br />
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div>
-<img src='images/papers/robodrive-track5.jpg' alt="sym" width="100%"></div></div>
+<img src='images/papers/robodrive-track5.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 ###  The Robodrive Challenge, Track 5: Robust Multi-Modal BEV Detection
 <p style="line-height:1.0">
