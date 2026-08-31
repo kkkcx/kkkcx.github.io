@@ -17,31 +17,17 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<div class="research-home" data-research-home markdown="1">
-
 {% include_relative includes/intro.md %}
 
-<section class="si-section si-news" data-reveal-group markdown="1">
 {% include_relative includes/news.md %}
-</section>
 
-<section class="si-section si-publications" data-publications data-reveal-group markdown="1">
 {% include_relative includes/pub.md %}
-</section>
 
-<section class="si-section si-experience" data-reveal-group markdown="1">
 {% include_relative includes/experience.md %}
-</section>
 
-<section class="si-section si-awards" data-reveal-group markdown="1">
 {% include_relative includes/honers.md %}
-</section>
 
-<section class="si-section si-education" data-reveal-group markdown="1">
 {% include_relative includes/edu.md %}
-</section>
-
-</div>
 
 <!-- # 💬 Invited Talks
 -----

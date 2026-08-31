@@ -1,14 +1,6 @@
 
 # 📝 Publications 
 -----
-<div class="si-filterbar" role="toolbar" aria-label="Filter publications">
-  <button type="button" class="is-active" data-publication-filter="all" aria-pressed="true">All</button>
-  <button type="button" data-publication-filter="2026" aria-pressed="false">2026</button>
-  <button type="button" data-publication-filter="accepted" aria-pressed="false">Accepted</button>
-  <button type="button" data-publication-filter="preprint" aria-pressed="false">Preprints</button>
-  <span class="si-filterbar__status" data-publication-status aria-live="polite"></span>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026</div>
 <img src='images/papers/2026-read-the-room.png' alt="Can MLLMs Read the Room?" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
