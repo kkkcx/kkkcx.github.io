@@ -36,6 +36,23 @@ Under Review, 2026 <br />
 <br />
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div>
+<img src='images/papers/2026-t2i-spo.png' alt="T2I-SPO" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+### The Path to Reconciling Quality and Safety in Text-to-Image Generation: Dataset, Method, and Evaluation
+<p style="line-height:1.0">
+<font size="2">
+Shouwei Ruan, Zhenyu Wu, Yao Huang, Ruochen Zhang, Yitong Sun, Caixin Kang, Shiji Zhao, Xingxing Wei <br />
+European Conference on Computer Vision (<strong>ECCV</strong>), 2026 <br />
+<a href="https://arxiv.org/abs/2504.14290">Paper</a> |
+Code (Coming Soon)
+<br />
+</font>
+</p>
+</div>
+</div>
+<br />
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div>
 <img src='images/papers/2026-vinci2.png' alt="Vinci2" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 ### Vinci2: Providing Proactive Assistance in Continuous Egocentric Videos
@@ -46,23 +63,6 @@ European Conference on Computer Vision (<strong>ECCV</strong>), 2026 <br />
 <a href="https://arxiv.org/abs/2607.11523">Paper</a> |
 <a href="https://sitonggong.github.io/EgoServe-page/">Project</a> |
 <a href="https://github.com/SitongGong/EgoMemo">Code</a>
-<br />
-</font>
-</p>
-</div>
-</div>
-<br />
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div>
-<img src='images/papers/2026-t2i-spo.png' alt="T2I-SPO" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-### The Path to Reconciling Quality and Safety in Text-to-Image Generation: Dataset, Method, and Evaluation
-<p style="line-height:1.0">
-<font size="2">
-Shouwei Ruan, Zhenyu Wu, Yao Huang, Ruochen Zhang, Yitong Sun, Caixin Kang, Shiji Zhao, Xingxing Wei <br />
-European Conference on Computer Vision (<strong>ECCV</strong>), 2026 <br />
-<a href="https://arxiv.org/abs/2504.14290">Paper</a> |
-Code (Coming Soon)
 <br />
 </font>
 </p>
