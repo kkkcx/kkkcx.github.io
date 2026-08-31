@@ -106,14 +106,16 @@ h1:before, .anchor:before {
 }
 
 .paper-box .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: .25em .75rem;
     position: absolute;
-    /* replace margins with absolute offsets for reliable overlay */
     top: .5em;
-    left: .5em;
+    left: -.5em;
     z-index: 1;
     color: white;
-    background-color: #00369f;
-    font-size: .8em;
+    background-color: #1a3c6e;
+    font-size: .75em;
+    font-weight: 500;
+    letter-spacing: .03em;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
 }

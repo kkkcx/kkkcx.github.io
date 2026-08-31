@@ -2,7 +2,7 @@
 # 💻 Experiences 
 -----
 <div class='paper-box'><div class='paper-box-image'><div>
-<img src='images/experiences/shanda-ai.jpg' alt="Shanda AI Research Tokyo" width="100%"></div></div>
+<img src='images/experiences/shanda-ai-cropped.png' alt="Shanda AI Research Tokyo" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 ### Research Intern - [Shanda AI Research Tokyo](https://jp.shanda.com/)
 <p style="line-height:1.0">
