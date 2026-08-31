@@ -183,7 +183,7 @@ Code (Coming Soon)
 Yiyi Cai, Xuangeng Chu, Xiwei Gao, Sitong Gong, Yifei Huang, Caixin Kang, Kunhang Li, Haiyang Liu, Ruicong Liu, Yun Liu, Dianwen Ng, Zixiong Su, Erwin Wu, Yuhan Wu, Dingkun Yan, Tianyu Yan, Chang Zeng, Bo Zheng, You Zhou <br />
 Technical Report, 2025 <br />
 <a href="https://arxiv.org/abs/2512.13674">Paper</a> |
-Project (Coming Soon)
+<a href="https://alayalab.github.io/project_mio_page/">Project</a>
 <br />
 </font>
 </p>
