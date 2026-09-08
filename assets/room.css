@@ -143,3 +143,7 @@ html:not([lang=en]) #index-nav button{min-height:41px}html:not([lang=en]) #index
 @media print{.visitor-wait,.visitor-feedback{display:none}.cv-portrait{transform:none}}
 /* A single divider is enough between a section title and its first entry. */
 .cv-section>h2+.experience-row,.cv-section>h2+.education-row,.cv-section>.paper:first-of-type{border-top:0}
+
+/* Loading remains cancellable; animated bars indicate actual playback only. */
+#sound-toggle[data-state=loading]{opacity:.65;border-color:var(--yellow)}
+#sound-toggle[data-state=error]{border-color:var(--red)}

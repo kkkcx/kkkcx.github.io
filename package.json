@@ -1,10 +1,11 @@
 {
   "name": "caixin-research-atelier",
-  "version": "15.0.0",
+  "version": "16.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 4173 --bind 0.0.0.0",
-    "check": "node --check assets/room-ui.js && node --check assets/room.js && node --check assets/room-characters.js && node --check assets/screen-art.js && node --check assets/resume-content.js && node --check assets/profile-details.js && node --check assets/paper-details.js && node --check assets/ui-icons.js && node --check assets/data.js && node --check assets/i18n.js && node --check assets/content-translations.js && node --check assets/tokyo-clock.js && node --check assets/studio-art.js && node --check assets/gallery-data.js && node --check assets/art-credits.js"
+    "check": "node --check assets/room-ui.js && node --check assets/room.js && node --check assets/room-characters.js && node --check assets/screen-art.js && node --check assets/resume-content.js && node --check assets/profile-details.js && node --check assets/paper-details.js && node --check assets/ui-icons.js && node --check assets/data.js && node --check assets/i18n.js && node --check assets/content-translations.js && node --check assets/tokyo-clock.js && node --check assets/studio-art.js && node --check assets/gallery-data.js && node --check assets/art-credits.js && node --check assets/music-controller.js",
+    "test:music": "node --test scripts/music-controller.test.mjs"
   }
 }

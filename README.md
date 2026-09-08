@@ -15,7 +15,7 @@ Open http://localhost:4173/. Run `npm run check` to check the JavaScript modules
 - The default view is an interactive 3D studio. Use the directory or select an object to explore the research, profile, news and academic record.
 - The Résumé button opens the full illustrated CV. Direct links include `?lang=zh#cv`, `?lang=ja#cv` and `?lang=en#cv/read`.
 - Clicking a painting opens the corresponding research direction. Clicking the caption asks for confirmation before opening the original artwork in a new tab.
-- Ambient motion, lighting and music have separate controls. The wall clock follows Tokyo time. Music starts after the first user interaction; manual pause is respected.
+- Ambient motion, lighting and music have separate controls. The wall clock follows Tokyo time. Music starts after a touch or click; blocked first attempts can retry on later interactions. Loading remains cancellable, and manual pause is respected. The full-length web audio copies raise the quiet opening for small speakers; original recordings remain in audio/.
 
 ## GitHub Pages
 

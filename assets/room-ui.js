@@ -1,3 +1,4 @@
+import {createMusicController} from './music-controller.js?v=16';
 import {t,getLanguage,setLanguage} from './i18n.js';
 import { ARTWORKS } from './gallery-data.js?v=13';
 import { DATA, LINES } from './data.js';
@@ -70,19 +71,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('#reading-pan
 $('#light-toggle').addEventListener('click',()=>{night=!night;document.body.classList.toggle('night',night);$('#light-toggle').setAttribute('aria-pressed',String(night));$('#light-toggle').setAttribute('aria-label',night?t('light.day'):t('light.night'));$('#light-toggle').title=t(night?'light.day':'light.night');window.dispatchEvent(new CustomEvent('room-light',{detail:night}));});
 const audio=$('#room-audio'),sound=$('#sound-toggle');audio.volume=.3;
 let messageTimer;function message(text){clearTimeout(messageTimer);$('#status-message').textContent=text;messageTimer=setTimeout(()=>$('#status-message').textContent='',3500);}
-function syncSound(){const playing=!audio.paused;sound.setAttribute('aria-pressed',String(playing));sound.setAttribute('aria-label',playing?t('sound.pause'):t('sound.play'));sound.setAttribute('title',playing?t('sound.pause'):t('sound.play'));sound.classList.toggle('playing',playing);window.dispatchEvent(new CustomEvent('room-music',{detail:playing}));}
-let awaitingFirstClick=true;
-function disarmFirstClick(){awaitingFirstClick=false;document.removeEventListener('click',startOnFirstClick,true);}
-async function playMusic(){sound.disabled=true;try{await audio.play();message(t('sound.nowPlaying'));}catch{message(t('sound.startError'));}finally{sound.disabled=false;}}
-function startOnFirstClick(event){
- if(!event.isTrusted||!awaitingFirstClick)return;
- disarmFirstClick();
- // The sound control handles its own first click, avoiding a play/pause double toggle.
- if(event.target.closest('#sound-toggle'))return;
- if(audio.paused)playMusic();
-}
-document.addEventListener('click',startOnFirstClick,true);
-sound.addEventListener('click',()=>{disarmFirstClick();if(!audio.paused){audio.pause();return;}playMusic();});audio.addEventListener('play',syncSound);audio.addEventListener('pause',syncSound);audio.addEventListener('error',()=>{sound.disabled=false;message(t('sound.unavailable'));});
+const music=createMusicController({audio,button:sound,message,t,notify:playing=>window.dispatchEvent(new CustomEvent('room-music',{detail:playing}))});
 let ambientMotion=!reduced.matches;
 function updateMotion(){const button=$('#motion-toggle');button.setAttribute('aria-pressed',String(!ambientMotion));button.setAttribute('aria-label',ambientMotion?t('motion.pause'):t('motion.resume'));button.title=ambientMotion?t('motion.pause'):t('motion.resume');button.querySelector('span').textContent=ambientMotion?'Ⅱ':'▷';window.dispatchEvent(new CustomEvent('room-motion',{detail:ambientMotion}));}
 $('#motion-toggle').addEventListener('click',()=>{ambientMotion=!ambientMotion;updateMotion();});
@@ -105,7 +94,7 @@ function applyTranslations(){
  $('#room-caption').firstElementChild.textContent=section==='overview'?t('room.caption'):t('room.exploring',{section:sectionName(section)});
  $('#studio-quote-text').textContent=t('room.captionSub');$('#studio-quote-source').textContent=t('room.quoteCredit');$('#resume-view').setAttribute('aria-label',t('mode.cv'));
  $('#view-toggle').querySelector('span').textContent=cv?t('mode.room'):t('mode.cv');$('#view-toggle').setAttribute('aria-label',t(cv?'mode.toRoom':'mode.toCv'));
- const labels={'#panel-close':'panel.close','#reset-room':'reset','#light-toggle':night?'light.day':'light.night','#motion-toggle':ambientMotion?'motion.pause':'motion.resume','#sound-toggle':audio.paused?'sound.play':'sound.pause'};
+ const labels={'#panel-close':'panel.close','#reset-room':'reset','#light-toggle':night?'light.day':'light.night','#motion-toggle':ambientMotion?'motion.pause':'motion.resume','#sound-toggle':sound.getAttribute('aria-busy')==='true'||!audio.paused?'sound.pause':'sound.play'};
  for(const [selector,key] of Object.entries(labels)){$(selector).setAttribute('aria-label',t(key));$(selector).title=t(key);}
  document.querySelectorAll('.language-switch').forEach(el=>el.setAttribute('aria-label',t('language.label')));
  document.querySelectorAll('[data-language]').forEach(button=>{button.setAttribute('aria-pressed',String(button.dataset.language===lang));button.setAttribute('aria-label',t('language.'+button.dataset.language));button.title=t('language.'+button.dataset.language);});
