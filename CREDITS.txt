@@ -1,0 +1,65 @@
+CAIXIN 3D HOMEPAGE — ASSET CREDITS
+
+Music
+Ravel: Boléro, M.81
+Paris Orchestra, conducted by Charles Munch (1956)
+Source: https://commons.wikimedia.org/wiki/File:Bolero-Maurice_Ravel-Paris_Orchestra-Charles_Munch-1956.ogg
+License status on Wikimedia Commons: Public Domain
+Packaged formats: local AAC/M4A and OGG derivatives
+
+Three.js
+Local Three.js r160 module and OrbitControls are included under vendor/.
+Three.js license: MIT
+https://github.com/mrdoob/three.js
+
+Academic profile
+The bundled academic/ snapshot is derived from Caixin Kang's original academic homepage:
+https://github.com/kkkcx/kkkcx.github.io
+The original site is based on AcademicPages / Minimal Mistakes. See its footer and source repository for attribution and license details.
+
+External live services
+The Visiting Map uses MapMyVisitors when online and falls back to a locally generated screen texture when unavailable.
+
+2026 editorial redesign
+All new studio geometry, canvas artwork, research diagrams, layout, and interaction code
+were created for this redesign. No reference-site models or textures were copied.
+
+Local typography
+Cormorant Garamond — Christian Thalmann / Catharsis Fonts.
+DM Sans — Colophon Foundry and contributing authors.
+Both font families are distributed under SIL Open Font License 1.1.
+Downloaded from Google Fonts. License texts are included under assets/fonts/.
+https://github.com/google/fonts/tree/main/ofl/cormorantgaramond
+https://github.com/google/fonts/tree/main/ofl/dmsans
+
+Bauhaus studio, version 3 (2026-09-07)
+New room geometry, original posters, skyline, canvas textures, interaction code,
+and the flat resume view were created for this project. All geometry and textures
+are generated locally in assets/room.js; no third-party 3D models are used.
+
+Bauhaus studio, version 4 (2026-09-07)
+The orange cat and reading researcher are restored from the user-supplied
+original-lab.html. Original character geometry and colors are retained in
+assets/room-characters.js with ambient animation adapted to the new scene.
+All 18 publication figures and author lists are reused from the bundled original
+academic/ snapshot. assets/paper-details.js maps the original files and authors
+to the corresponding paper URLs; publication status data is unchanged.
+
+Bauhaus studio, version 5 (2026-09-07)
+The studio companions were resculpted in code, retaining the user-provided orange
+cat and ochre-coat/red-scarf researcher identities. New screen artwork and UI icons
+are authored locally. Academic photographs, paper figures, competition certificates,
+experience logos, news and section order are reused from the original bundled
+academic page (https://kkkcx.github.io/). The visitor map uses the same public
+MapMyVisitors image URL as the original site. The local world-map.svg is a stylized
+offline illustration, labeled as unavailable live data, and contains no visitor counts.
+
+Version 6 — CJK typography
+Noto Sans CJK SC / Noto Sans JP, Copyright 2014–2021 Adobe.
+Local glyph subsets renamed Studio CJK SC and Studio CJK JP; Japanese variable font instantiated at weight 400.
+Distributed under SIL Open Font License 1.1; copyright and license metadata preserved.
+Sources:
+https://github.com/notofonts/noto-cjk/tree/main/Sans
+https://github.com/google/fonts/tree/main/ofl/notosansjp
+Licenses: assets/fonts/OFL-NotoSansCJK.txt and assets/fonts/OFL-NotoSansJP.txt
+Rebuild: scripts/subset-fonts.py (requires fonttools and brotli only when maintaining fonts).

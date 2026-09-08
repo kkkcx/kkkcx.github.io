@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#e9e7df">
+<meta name="description" content="Step inside Caixin Kang’s Bauhaus research studio. Social intelligence, computer vision, and human-centered AI at the University of Tokyo.">
+<title>Caixin Kang · The Research Studio</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts/fonts.css?v=15"><link rel="stylesheet" href="assets/room.css?v=9"><link rel="stylesheet" href="assets/reading-refinements.css?v=12">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/"}}</script>
+</head>
+<body>
+<a class="skip" href="#cv">Read the résumé</a>
+<header class="identity"><a href="#overview" aria-label="Return to the studio"><span class="bauhaus-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>CAIXIN KANG<small>THE RESEARCH STUDIO</small></span></a></header>
+<div id="language-switch" class="language-switch" role="group" aria-label="Choose language"><button type="button" data-language="en" lang="en" aria-pressed="true">EN</button><button type="button" data-language="zh" lang="zh-CN" aria-pressed="false">中文</button><button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button></div>
+<button id="view-toggle" type="button" aria-pressed="false"><svg viewBox="0 0 18 18" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 3h12v12H3zM6 6h6M6 9h6M6 12h4"/></svg><span>Résumé</span><span class="toggle-arrow" aria-hidden="true">↗</span></button>
+<aside id="index"><button id="index-toggle" aria-expanded="true" aria-controls="index-nav"><span>INDEX</span><span id="index-symbol" aria-hidden="true">−</span></button><nav id="index-nav" aria-label="Studio directory"></nav><p class="index-foot">UT-Vision Lab<br>The University of Tokyo</p></aside>
+<main id="room-view" aria-label="The interactive research studio"><div id="room-stage"><canvas id="room-canvas" tabindex="0" aria-label="Interactive Bauhaus studio. Drag to rotate, scroll to zoom, or use the directory to explore."></canvas><img id="room-fallback" src="assets/room-preview.png" alt="A spacious Bauhaus research room with a study, library, gallery, and listening corner" hidden></div><div id="room-loading"><span class="loader-shapes" aria-hidden="true"><i></i><i></i><i></i></span><span>Opening the studio</span></div><div id="object-label" hidden><span id="object-name"></span><span aria-hidden="true">↗</span></div></main>
+<div class="room-caption" id="room-caption"><span>THE STUDIO</span><blockquote class="studio-quote"><p id="studio-quote-text">An indistinct mingling of enthusiasm, self-denial and virtue.</p><cite><a id="studio-quote-source" href="https://fr.wikisource.org/wiki/La_Porte_%C3%A9troite/Texte_entier" target="_blank" rel="noreferrer" title="… d’un indistinct mélange d’enthousiasme, d’abnégation, de vertu …">André Gide · La Porte étroite, I · excerpt</a></cite></blockquote></div>
+<div class="room-help" id="room-help">Drag to orbit <i>·</i> Scroll to zoom <i>·</i> Select an object</div>
+<div class="room-tools" id="room-tools"><button id="reset-room" aria-label="Return to the full room" title="Reset view"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M4 7a7 7 0 1 1-1 6M4 2v5h5"/></svg></button><button id="light-toggle" aria-label="Switch to nighttime" aria-pressed="false" title="Day / night"><svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.25"><circle cx="10" cy="10" r="3.5"/><path d="M10 1v2m0 14v2M1 10h2m14 0h2M3.5 3.5 5 5m10 10 1.5 1.5m-13 0L5 15M15 5l1.5-1.5"/></svg></button><button id="motion-toggle" aria-label="Pause ambient motion" aria-pressed="false" title="Pause ambient motion"><span aria-hidden="true">Ⅱ</span></button><button id="sound-toggle" aria-label="Play Boléro" aria-pressed="false" title="Music"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span></button></div>
+<audio id="room-audio" preload="none" loop><source src="audio/bolero-munch-1956.m4a" type="audio/mp4"><source src="audio/bolero-munch-1956.ogg" type="audio/ogg"></audio>
+<aside id="reading-panel" aria-labelledby="panel-title" hidden><div class="panel-top"><span id="panel-kicker"></span><button id="panel-close" aria-label="Close details">×</button></div><div class="panel-language"><div class="language-switch" role="group" aria-label="Choose language"><button type="button" data-language="en" lang="en" aria-pressed="true">EN</button><button type="button" data-language="zh" lang="zh-CN" aria-pressed="false">中文</button><button type="button" data-language="ja" lang="ja" aria-pressed="false">日本語</button></div></div><div id="panel-content"></div></aside>
+<main id="resume-view" hidden aria-label="Academic résumé"><div id="resume-content"></div></main>
+<div id="status-message" role="status" aria-live="polite"></div>
+<noscript><style>#room-loading,#room-stage,#index,#room-tools,.room-help,.room-caption,#view-toggle,#language-switch{display:none}</style><p style="padding:130px 32px">Read the complete <a href="academic/">academic résumé ↗</a>.</p></noscript>
+<script type="module" src="assets/room-ui.js?v=15"></script>
+</body></html>

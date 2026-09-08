@@ -1,0 +1,54 @@
+[
+  {
+    "file": "monet-parasol.jpg",
+    "title": "Woman with a Parasol — Madame Monet and Her Son",
+    "artist": "Claude Monet",
+    "year": 1875,
+    "source": "https://www.nga.gov/artworks/61379-woman-parasol-madame-monet-and-her-son",
+    "download": "https://api.nga.gov/iiif/99758d9d-c10b-4d02-a198-7e49afb1f3a6/full/!1600,1600/0/default.jpg",
+    "license": "CC0 1.0",
+    "policy": "https://www.nga.gov/terms-and-notices",
+    "credit": "Courtesy National Gallery of Art, Washington",
+    "verified": "2026-09-08",
+    "sha256": "df866ac74ee16f04d4ec7b768d854705be95d2ce01e2a3760927ef6c26c62ef3"
+  },
+  {
+    "file": "renoir-monet.jpg",
+    "title": "Claude Monet",
+    "artist": "Auguste Renoir",
+    "year": 1872,
+    "source": "https://www.nga.gov/artworks/66433-claude-monet",
+    "download": "https://api.nga.gov/iiif/93d0b993-6291-44bc-bd2f-4b5b35e31473/full/!1600,1600/0/default.jpg",
+    "license": "CC0 1.0",
+    "policy": "https://www.nga.gov/terms-and-notices",
+    "credit": "Courtesy National Gallery of Art, Washington",
+    "verified": "2026-09-08",
+    "sha256": "30ab4ade7a27c2b651a43a19bf4aaeef30fcb28acf440084a40497de1c20970a"
+  },
+  {
+    "file": "monet-footbridge.jpg",
+    "title": "The Japanese Footbridge",
+    "artist": "Claude Monet",
+    "year": 1899,
+    "source": "https://www.nga.gov/artworks/74796-japanese-footbridge",
+    "download": "https://api.nga.gov/iiif/0b9cefb5-1ee4-401a-8154-8d4039191a28/full/!1600,1600/0/default.jpg",
+    "license": "CC0 1.0",
+    "policy": "https://www.nga.gov/terms-and-notices",
+    "credit": "Courtesy National Gallery of Art, Washington",
+    "verified": "2026-09-08",
+    "sha256": "9539bce1d13717ec2b62a397b4a01e11a0c56c2b1a1a66d27403b699d29aa931"
+  },
+  {
+    "file": "monet-waterloo.jpg",
+    "title": "Waterloo Bridge, Gray Day",
+    "artist": "Claude Monet",
+    "year": 1903,
+    "source": "https://www.nga.gov/artworks/46658-waterloo-bridge-gray-day",
+    "download": "https://api.nga.gov/iiif/5f0f2f71-1428-4fc7-a951-0fab4fe39ffd/full/!1600,1600/0/default.jpg",
+    "license": "CC0 1.0",
+    "policy": "https://www.nga.gov/terms-and-notices",
+    "credit": "Courtesy National Gallery of Art, Washington",
+    "verified": "2026-09-08",
+    "sha256": "31bc48b013341d626c9ab9910c54bcdf3f9022d9b8c57914c9e1200bdedde847"
+  }
+]

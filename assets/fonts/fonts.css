@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(font-0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(font-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(font-2.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(font-3.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(font-4.ttf) format('truetype');
+}
+/* Noto subsets, renamed Studio CJK. See the bundled SIL Open Font Licenses. */
+@font-face{font-family:'Studio CJK SC';font-style:normal;font-weight:400;font-display:swap;src:url(studio-cjk-sc.woff2?v=15) format('woff2');unicode-range:U+0080-FFFF}
+@font-face{font-family:'Studio CJK JP';font-style:normal;font-weight:400;font-display:swap;src:url(studio-cjk-jp.woff2?v=15) format('woff2');unicode-range:U+0080-FFFF}
+
+/* Additional Noto Sans JP glyphs for the v15 research copy; same bundled OFL. */
+@font-face{font-family:'Studio CJK JP';font-style:normal;font-weight:400;font-display:swap;src:url(studio-cjk-jp-supplement.woff2?v=15) format('woff2');unicode-range:U+30BA,U+30CE,U+4FA1,U+5584,U+6539,U+6C4E,U+8A55}

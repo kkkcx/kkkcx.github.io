@@ -12,9 +12,14 @@ Gemfile.lock
 node_modules
 package-lock.json
 
-# Ignore the vendor file at root level and bundle for alternative installation
-/vendor/
+# Ignore Ruby dependencies; keep the locally bundled Three.js runtime
+/vendor/bundle/
 .bundle/
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Local preview artifacts
+/qa/
+__pycache__/
+*.zip
