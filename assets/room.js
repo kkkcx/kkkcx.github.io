@@ -1,4 +1,4 @@
-import {t} from './i18n.js';
+import {t} from './i18n.js?v=19';
 import {getTokyoClockAngles} from './tokyo-clock.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';

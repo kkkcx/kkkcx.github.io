@@ -1,6 +1,6 @@
 import {DATA} from './data.js';
 import {NEWS} from './profile-details.js';
-import {getLanguage,t} from './i18n.js';
+import {getLanguage,t} from './i18n.js?v=19';
 
 // Names without an authoritative local spelling retain the original Latin form.
 // Translations describe the existing CV; they do not add qualifications or affiliations.

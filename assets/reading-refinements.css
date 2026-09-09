@@ -247,3 +247,18 @@ body.night:not(.cv-mode) .direction-tag {
 .gallery-note p{margin:12px 0 8px;color:#5b6659}
 .gallery-note a{color:#326b79;text-underline-offset:3px}
 .gallery-note summary:focus-visible{outline:2px solid #326b79;outline-offset:4px}
+/* Version 19: size the literary caption from both viewport width and height. */
+.room-caption { width: min(440px, calc(100vw - 68px)); max-width: none; bottom: clamp(20px, 3.5vh, 34px); }
+.studio-quote { font-size: clamp(11px, calc(9.5px + .22vw), 13px); line-height: 1.72; }
+.studio-quote p { max-width: 44ch; overflow-wrap: anywhere; text-wrap: balance; }
+.studio-quote cite { margin-top: clamp(3px, 1vh, 6px); font-size: clamp(9px, calc(8px + .12vw), 10px); }
+@media (max-width: 760px) {
+  .room-caption { width: auto; max-width: none; bottom: clamp(62px, 9vh, 78px); }
+  .studio-quote { font-size: clamp(10.5px, 3vw, 12px); line-height: 1.65; }
+  html:not([lang=en]) .studio-quote { font-size: clamp(11px, 3.1vw, 12.5px); }
+}
+@media (max-height: 650px) and (min-width: 761px) {
+  .room-caption { width: min(390px, calc(100vw - 60px)); bottom: 16px; }
+  .studio-quote { font-size: 11px; line-height: 1.55; }
+  .studio-quote cite { margin-top: 3px; font-size: 9px; }
+}

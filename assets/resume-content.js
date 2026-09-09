@@ -1,4 +1,4 @@
-import {t,getLanguage,localDate} from './i18n.js';
+import {t,getLanguage,localDate} from './i18n.js?v=19';
 import {translatedBio,translatedEducation,translatedAwards,translatedNews} from './content-translations.js';
 import {symbol} from './ui-icons.js';
 import {DATA,LINES} from './data.js';

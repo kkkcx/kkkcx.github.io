@@ -1,8 +1,8 @@
 import {createMusicController} from './music-controller.js?v=16';
-import {t,getLanguage,setLanguage} from './i18n.js';
+import {t,getLanguage,setLanguage} from './i18n.js?v=19';
 import { ARTWORKS } from './gallery-data.js?v=13';
 import { DATA, LINES } from './data.js';
-import { links,portrait,biography,paper,papersForDirection,news,education,experiences,competitions,honors,services,visitorMap,initVisitorMaps,resume } from './resume-content.js?v=18';
+import { links,portrait,biography,paper,papersForDirection,news,education,experiences,competitions,honors,services,visitorMap,initVisitorMaps,resume } from './resume-content.js?v=19';
 const $=s=>document.querySelector(s);
 const mobile=matchMedia('(max-width:760px)'), reduced=matchMedia('(prefers-reduced-motion:reduce)');
 const items=[['overview','The studio'],['about','About me'],['news','News'],['map','Publications'],...LINES.map(l=>[l.id,l.name[0]+l.name.slice(1).toLowerCase()]),['competitions','Competitions'],['experience','Experiences'],['awards','Awards'],['services','Services'],['edu','Educations'],['visitors','Visiting Map']];
@@ -79,7 +79,7 @@ reduced.addEventListener('change',e=>{ambientMotion=!e.matches;updateMotion();})
 window.addEventListener('room-ready',updateMotion);updateMotion();
 applyTranslations();
 route();
-import('./room.js?v=15').catch(e=>{console.warn('3D studio unavailable',e);$('#room-loading').hidden=true;$('#room-canvas').hidden=true;$('#room-fallback').hidden=false;$('#light-toggle').disabled=true;$('#room-help').textContent=t('help.fallback');});
+import('./room.js?v=19').catch(e=>{console.warn('3D studio unavailable',e);$('#room-loading').hidden=true;$('#room-canvas').hidden=true;$('#room-fallback').hidden=false;$('#light-toggle').disabled=true;$('#room-help').textContent=t('help.fallback');});
 
 // Language changes only update DOM copy; camera, mode, music and motion are retained.
 function applyTranslations(){
