@@ -9,6 +9,7 @@ export const PAPER_DETAILS = {
     "authors": "Caixin Kang, Yifei Huang, Liangyang Ouyang, Mingfang Zhang, Ruicong Liu, Yoichi Sato"
   },
   "https://arxiv.org/abs/2605.22109": {
+    "equalContribution": 3,
     "image": "academic/images/papers/2026-mm-ocean.png",
     "authors": "Caixin Kang, Tianyu Yan, Sitong Gong, Mingfang Zhang, Liangyang Ouyang, Ruicong Liu, Bo Zheng, Huchuan Lu, Kaipeng Zhang, Yoichi Sato, Yifei Huang"
   },
@@ -37,10 +38,12 @@ export const PAPER_DETAILS = {
     "authors": "Shouwei Ruan, Liyuan Wang, Caixin Kang, Qihui Zhu, Songming Liu, Xingxing Wei, Hang Su"
   },
   "https://arxiv.org/abs/2607.11523": {
+    "equalContribution": 3,
     "image": "academic/images/papers/2026-vinci2.png",
     "authors": "Sitong Gong, Tianyu Yan, Caixin Kang, Bo Zheng, Xiang Ruan, Huchuan Lu, Kaipeng Zhang, Yoichi Sato, Yifei Huang"
   },
   "https://arxiv.org/abs/2608.02392": {
+    "equalContribution": 3,
     "image": "academic/images/papers/2026-grove.png",
     "authors": "Sitong Gong, Caixin Kang, Tianyu Yan, Guo Chen, Bo Zheng, Kaipeng Zhang, Yunzhi Zhuge, Xiang Ruan, Huchuan Lu, Yifei Huang"
   },

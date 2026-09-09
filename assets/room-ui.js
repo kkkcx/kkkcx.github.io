@@ -2,7 +2,7 @@ import {createMusicController} from './music-controller.js?v=16';
 import {t,getLanguage,setLanguage} from './i18n.js';
 import { ARTWORKS } from './gallery-data.js?v=13';
 import { DATA, LINES } from './data.js';
-import { links,portrait,biography,paper,papersForDirection,news,education,experiences,competitions,honors,services,visitorMap,initVisitorMaps,resume } from './resume-content.js';
+import { links,portrait,biography,paper,papersForDirection,news,education,experiences,competitions,honors,services,visitorMap,initVisitorMaps,resume } from './resume-content.js?v=17';
 const $=s=>document.querySelector(s);
 const mobile=matchMedia('(max-width:760px)'), reduced=matchMedia('(prefers-reduced-motion:reduce)');
 const items=[['overview','The studio'],['about','About me'],['news','News'],['map','Publications'],...LINES.map(l=>[l.id,l.name[0]+l.name.slice(1).toLowerCase()]),['competitions','Competitions'],['experience','Experiences'],['awards','Awards'],['services','Services'],['edu','Educations'],['visitors','Visiting Map']];
