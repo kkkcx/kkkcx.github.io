@@ -48,6 +48,7 @@ export const PAPER_DETAILS = {
     "authors": "Sitong Gong, Caixin Kang, Tianyu Yan, Guo Chen, Bo Zheng, Kaipeng Zhang, Yunzhi Zhuge, Xiang Ruan, Huchuan Lu, Yifei Huang"
   },
   "https://ieeexplore.ieee.org/abstract/document/11114945": {
+    "correspondingAuthors": ["Caixin Kang"],
     "image": "academic/images/papers/2025-diffender-pami.png",
     "authors": "Xingxing Wei(advisor), Caixin Kang, Yinpeng Dong, Zhengyi Wang, Shouwei Ruan, Yubo Chen, Hang Su"
   },
@@ -76,6 +77,7 @@ export const PAPER_DETAILS = {
     "authors": "Yinpeng Dong, Shouwei Ruan, Hang Su, Caixin Kang, Xingxing Wei, Jun Zhu"
   },
   "https://arxiv.org/abs/2602.12783": {
+    "correspondingAuthors": ["Caixin Kang"],
     "image": "academic/images/papers/2026-squtr.png",
     "authors": "Yuejie Li, Ke Yang, Yueying Hua, Berlin Chen, Jianhao Nie, Yueping He, Caixin Kang"
   }

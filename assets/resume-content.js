@@ -2,7 +2,7 @@ import {t,getLanguage,localDate} from './i18n.js';
 import {translatedBio,translatedEducation,translatedAwards,translatedNews} from './content-translations.js';
 import {symbol} from './ui-icons.js';
 import {DATA,LINES} from './data.js';
-import {PAPER_DETAILS} from './paper-details.js?v=17';
+import {PAPER_DETAILS} from './paper-details.js?v=18';
 import {PUBLICATION_ORDER,NEWS,EXPERIENCES,COMPETITIONS} from './profile-details.js';
 const iconPaths={
  Email:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
@@ -20,8 +20,8 @@ export function paper(p,{illustrated=false,line=null}={}){
  const details=PAPER_DETAILS[p.p],image=illustrated&&details?.image;
  const directions=directionsFor(p,line);
  const tags=`<span class="venue-tag">${p.v==='Under Review'?t('venue.review'):p.v==='Technical Report'?t('venue.report'):p.v} ${p.y}</span>${directions.map(l=>`<span class="direction-tag" style="--tag-tone:${l.color}" title="${t('line.'+l.id+'.title')}">${t('line.'+l.id+'.name')}</span>`).join('')}`;
- const authorNames=illustrated&&details?.authors?details.authors.split(', ').map((name,index)=>`${name==='Caixin Kang'?'<strong>Caixin Kang</strong>':escapeHTML(name)}${index<(details.equalContribution||0)?'<sup title="Equal contribution">*</sup>':''}`).join(', '):'';
- const authors=authorNames?`<p class="paper-authors">${authorNames}${details.equalContribution?'<br><small lang="en">* Equal contribution</small>':''}</p>`:'';
+ const authorNames=illustrated&&details?.authors?details.authors.split(', ').map((name,index)=>`${name==='Caixin Kang'?'<strong>Caixin Kang</strong>':escapeHTML(name)}${index<(details.equalContribution||0)?'<sup title="Equal contribution">*</sup>':''}${details.correspondingAuthors?.includes(name)?'<sup title="Corresponding author">†</sup>':''}`).join(', '):'';
+ const authors=authorNames?`<p class="paper-authors">${authorNames}</p>`:'';
  return `<article class="paper ${image?'illustrated':'text-only'}" data-research="${line?.id||''}" data-topics="${directions.map(l=>l.id).join(' ')}" data-paper-url="${p.p}">${image?`<a class="paper-figure" href="${p.p}" target="_blank" rel="noreferrer" aria-label="${t('paper.open',{title:escapeHTML(p.t)})}"><img src="${details.image}" alt="${t('paper.figure',{title:escapeHTML(p.t)})}" loading="lazy" decoding="async"></a>`:''}<div class="paper-copy"><div class="paper-meta">${tags}</div><h3><a href="${p.p}" target="_blank" rel="noreferrer">${p.t}</a></h3>${authors}${p.toAppear?`<p class="publication-status">${t('paper.toAppear',{date:localDate(p.toAppear)})}</p>`:''}<div class="links">${[[p.resource||'Paper',p.p],['Announcement',p.announcement],['Code',p.c],['Project',p.pr],['Dataset',p.d]].filter(([,u])=>u).map(([label,u])=>`<a href="${u}" target="_blank" rel="noreferrer">${t('paper.'+label)} <span aria-hidden="true">↗</span></a>`).join('')}${p.cs?`<span class="pending">${t('paper.forthcoming')}</span>`:''}</div></div></article>`;
 }
 const allPapers=LINES.flatMap(line=>line.papers.map(p=>({p,line})));
