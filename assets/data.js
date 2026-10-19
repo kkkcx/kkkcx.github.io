@@ -16,7 +16,7 @@ export const DATA = {
   ],
   news: [
     ['Oct 2026', 'Explore our new research homepage: Social Intelligence @ UT-Vision'],
-    ['Sep 2026', 'SocialDirector accepted by NeurIPS 2026'],
+    ['Sep 2026', 'One paper accepted by NeurIPS 2026'],
     ['Sep 2026', 'One paper accepted by CoRL 2026'],
     ['Aug 2026', 'One paper accepted by EMNLP 2026'],
     ['Jun 2026', 'Two papers accepted by ECCV 2026'],

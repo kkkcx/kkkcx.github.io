@@ -1,6 +1,6 @@
-import {DATA} from './data.js?v=20';
-import {NEWS} from './profile-details.js?v=20';
-import {getLanguage,t} from './i18n.js?v=20';
+import {DATA} from './data.js?v=21';
+import {NEWS} from './profile-details.js?v=21';
+import {getLanguage,t} from './i18n.js?v=21';
 
 // Names without an authoritative local spelling retain the original Latin form.
 // Translations describe the existing CV; they do not add qualifications or affiliations.
@@ -61,10 +61,6 @@ export function translatedNews(i){
  if(original.includes('https://ut-vision-social.github.io/')){
   const site=a('https://ut-vision-social.github.io/','Social Intelligence @ UT-Vision');
   return lang==='zh'?`我们的研究主页 ${site} 已上线，欢迎了解社会理解、生成与智能体方向的研究。`:`研究ホームページ ${site} を公開しました。社会的な理解、生成、エージェントに関する研究をご覧ください。`;
- }
- if(original.includes('https://arxiv.org/abs/2605.10079')){
-  const paper=a('https://arxiv.org/abs/2605.10079','SocialDirector'),venue=a('https://neurips.cc/Conferences/2026','NeurIPS');
-  return lang==='zh'?`我们的论文 ${paper} 被 ${venue} 2026 接收。`:`論文 ${paper} が ${venue} 2026 に採択されました。`;
  }
  if(original.includes('BOOST NAIS')){
   const href='https://spring-gx.adm.s.u-tokyo.ac.jp/'+(lang==='ja'?'ja':'en')+'/boost/';

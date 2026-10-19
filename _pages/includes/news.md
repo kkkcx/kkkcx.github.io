@@ -1,7 +1,7 @@
 # 🔥 News
 ----
 - *[October, 2026]*: &nbsp;🎉 Explore our new research homepage, [Social Intelligence @ UT-Vision](https://ut-vision-social.github.io/), featuring our work on social understanding, generation, and agents.
-- *[September, 2026]*: &nbsp;🎉 Our paper [SocialDirector](https://arxiv.org/abs/2605.10079) has been accepted by [NeurIPS](https://neurips.cc/Conferences/2026) 2026.
+- *[September, 2026]*: &nbsp;🎉 One paper has been accepted by [NeurIPS](https://neurips.cc/Conferences/2026) 2026.
 - *[August, 2026]*: &nbsp;🎉 One paper has been accepted by [EMNLP](https://2026.emnlp.org/) 2026.
 - *[June, 2026]*: &nbsp;🎉 Two papers have been accepted by [ECCV](https://eccv.ecva.net/) 2026.
 - *[June, 2026]*: &nbsp;🎉 One paper has been accepted by [Nature Communications](https://www.nature.com/ncomms/).

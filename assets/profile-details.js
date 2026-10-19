@@ -30,7 +30,7 @@ export const NEWS = [
   ],
   [
     "September 2026",
-    "Our paper <a href=\"https://arxiv.org/abs/2605.10079\">SocialDirector</a> has been accepted by <a href=\"https://neurips.cc/Conferences/2026\">NeurIPS</a> 2026."
+    "One paper has been accepted by <a href=\"https://neurips.cc/Conferences/2026\">NeurIPS</a> 2026."
   ],
   [
     "September 2026",

@@ -1,8 +1,8 @@
-import {t} from './i18n.js?v=20';
+import {t} from './i18n.js?v=21';
 import {getTokyoClockAngles} from './tokyo-clock.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { LINES } from './data.js?v=20';
+import { LINES } from './data.js?v=21';
 import { createCompanions } from './room-characters.js';
 import { drawMonitor,drawTelevision,prepareCoastlines } from './screen-art.js?v=11';
 import { ARTWORKS,loadImage,drawArtwork,drawArtLabel,drawResearchBoard,drawTokyoSky } from './studio-art.js?v=15';
