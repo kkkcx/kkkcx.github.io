@@ -1,5 +1,5 @@
 import {ARTWORKS} from './gallery-data.js?v=26';
-import {getLanguage,setLanguage} from './i18n.js?v=26';
+import {getLanguage,setLanguage} from './i18n.js?v=28';
 const copy={
  en:{title:'Gallery',back:'← The studio',original:'Original title',sources:'Sources & image rights',record:'Museum record',image:'Image source',rights:'Rights reference',unchanged:'Complete image, displayed at its original aspect ratio; no image edits.',policy:'Source, collection, and image-rights information accompany each work.'},
  zh:{title:'画廊',back:'← 返回工作室',original:'原题',sources:'来源与图片授权',record:'馆藏记录',image:'图片来源',rights:'权利说明',unchanged:'完整保留画面，按原图比例展示；未编辑图片内容。',policy:'每幅作品均保留来源、收藏机构与图片授权信息。'},

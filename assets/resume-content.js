@@ -1,5 +1,5 @@
-import {t,getLanguage,localDate} from './i18n.js?v=26';
-import {translatedBio,translatedEducation,translatedAwards,translatedNews} from './content-translations.js?v=26';
+import {t,getLanguage,localDate} from './i18n.js?v=28';
+import {translatedBio,translatedEducation,translatedAwards,translatedNews} from './content-translations.js?v=28';
 import {symbol} from './ui-icons.js';
 import {DATA,LINES} from './data.js?v=26';
 import {PAPER_DETAILS} from './paper-details.js?v=24';
