@@ -1,6 +1,6 @@
-import {DATA} from './data.js';
-import {NEWS} from './profile-details.js';
-import {getLanguage,t} from './i18n.js?v=19';
+import {DATA} from './data.js?v=20';
+import {NEWS} from './profile-details.js?v=20';
+import {getLanguage,t} from './i18n.js?v=20';
 
 // Names without an authoritative local spelling retain the original Latin form.
 // Translations describe the existing CV; they do not add qualifications or affiliations.
@@ -16,11 +16,13 @@ export function translatedBio(){
  if(getLanguage()==='en')return DATA.bio;
  if(getLanguage()==='zh')return [
   `你好，我是东京大学 ${lab} 的博士研究生，导师是${sato()}。`,
-  `我于 2025 年获得北京航空航天大学人工智能学院硕士学位，导师为${wei()}（${rose}）。硕士期间，我还接受了清华大学${su()}和${dong()}（${tsail}）的联合指导。此前，我于 2022 年获得四川大学计算机学院学士学位。`
+  `我于 2025 年获得北京航空航天大学人工智能学院硕士学位，导师为${wei()}（${rose}）。硕士期间，我还接受了清华大学${su()}和${dong()}（${tsail}）的联合指导。此前，我于 2022 年获得四川大学计算机学院学士学位。`,
+  `欢迎访问我们的研究主页 ${a('https://ut-vision-social.github.io/','Social Intelligence @ UT-Vision')}，了解社会理解、生成与智能体方向的最新研究。`
  ];
  return [
   `東京大学 ${lab} の博士課程に在籍し、${sato()}の指導を受けています。`,
-  `2025年に北京航空航天大学人工智能学院で修士号（M.E.）を取得しました。${wei()}（${rose}）の指導に加え、修士課程では清華大学の${su()}と${dong()}（${tsail}）から共同指導を受けました。それ以前は、2022年に四川大学計算機学院で学士号（B.E.）を取得しました。`
+  `2025年に北京航空航天大学人工智能学院で修士号（M.E.）を取得しました。${wei()}（${rose}）の指導に加え、修士課程では清華大学の${su()}と${dong()}（${tsail}）から共同指導を受けました。それ以前は、2022年に四川大学計算機学院で学士号（B.E.）を取得しました。`,
+  `社会的な理解、生成、エージェントに関する最新の研究は、${a('https://ut-vision-social.github.io/','Social Intelligence @ UT-Vision')}をご覧ください。`
  ];
 }
 export function translatedEducation(){
@@ -56,6 +58,14 @@ export function translatedAwards(){
 export function translatedNews(i){
  const original=NEWS[i][1],lang=getLanguage();
  if(lang==='en')return original;
+ if(original.includes('https://ut-vision-social.github.io/')){
+  const site=a('https://ut-vision-social.github.io/','Social Intelligence @ UT-Vision');
+  return lang==='zh'?`我们的研究主页 ${site} 已上线，欢迎了解社会理解、生成与智能体方向的研究。`:`研究ホームページ ${site} を公開しました。社会的な理解、生成、エージェントに関する研究をご覧ください。`;
+ }
+ if(original.includes('https://arxiv.org/abs/2605.10079')){
+  const paper=a('https://arxiv.org/abs/2605.10079','SocialDirector'),venue=a('https://neurips.cc/Conferences/2026','NeurIPS');
+  return lang==='zh'?`我们的论文 ${paper} 被 ${venue} 2026 接收。`:`論文 ${paper} が ${venue} 2026 に採択されました。`;
+ }
  if(original.includes('BOOST NAIS')){
   const href='https://spring-gx.adm.s.u-tokyo.ac.jp/'+(lang==='ja'?'ja':'en')+'/boost/';
   return lang==='zh'

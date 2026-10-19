@@ -1,6 +1,9 @@
 // Section order, original artwork and news restored from the bundled academic homepage.
 // Stable publication URLs keep entries without artwork in the chronological list.
 export const PUBLICATION_ORDER = [
+  "https://arxiv.org/abs/2610.20195",
+  "https://ut-vision-social.github.io/#honeyed",
+  "https://arxiv.org/abs/2605.10079",
   "https://arxiv.org/abs/2511.18127",
   "https://arxiv.org/abs/2511.16221",
   "https://arxiv.org/abs/2608.02392",
@@ -8,7 +11,6 @@ export const PUBLICATION_ORDER = [
   "https://arxiv.org/abs/2607.11523",
   "https://www.nature.com/articles/s41467-026-74358-5",
   "https://arxiv.org/abs/2605.22109",
-  "https://arxiv.org/abs/2605.10079",
   "https://arxiv.org/abs/2602.12783",
   "https://arxiv.org/abs/2511.17952",
   "https://arxiv.org/abs/2605.23216",
@@ -22,6 +24,14 @@ export const PUBLICATION_ORDER = [
   "https://proceedings.neurips.cc/paper_files/paper/2022/file/eee7ae5cf0c4356c2aeca400771791aa-Paper-Conference.pdf"
 ];
 export const NEWS = [
+  [
+    "October 2026",
+    "Explore our new research homepage, <a href=\"https://ut-vision-social.github.io/\">Social Intelligence @ UT-Vision</a>, featuring our work on social understanding, generation, and agents."
+  ],
+  [
+    "September 2026",
+    "Our paper <a href=\"https://arxiv.org/abs/2605.10079\">SocialDirector</a> has been accepted by <a href=\"https://neurips.cc/Conferences/2026\">NeurIPS</a> 2026."
+  ],
   [
     "September 2026",
     "One paper has been accepted by <a href=\"https://www.ut-vision.org/post/202611-corl/\">CoRL</a> 2026."

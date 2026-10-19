@@ -1,6 +1,54 @@
 
 # 📝 Publications 
 -----
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div>
+<img src='images/papers/2026-social-agent.webp' alt="What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+### What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds
+<p style="line-height:1.0">
+<font size="2">
+Caixin Kang, Ke Wang, Yuchuan Wu, Xiaoqiang Wang, Ling Li, Bingxue Qiu, Yongbin Li, Yoichi Sato <br />
+Preprint, 2026 <br />
+<a href="https://arxiv.org/abs/2610.20195">Paper</a> | <a href="https://ut-vision-social.github.io/#hico">Project</a>
+<br />
+</font>
+</p>
+</div>
+</div>
+<br />
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv soon</div>
+<img src='images/papers/2026-honeyed-words.webp' alt="Honeyed Words, Hidden Daggers: Benchmarking and Training LLMs to See Through Mock Politeness" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+### Honeyed Words, Hidden Daggers: Benchmarking and Training LLMs to See Through Mock Politeness
+<p style="line-height:1.0">
+<font size="2">
+arXiv soon, 2026 <br />
+<a href="https://ut-vision-social.github.io/#honeyed">Project</a> | Paper forthcoming
+<br />
+</font>
+</p>
+</div>
+</div>
+<br />
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div>
+<img src='images/papers/2026-social-director.png' alt="SocialDirector" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+### SocialDirector: Training-Free Social Interaction Control for Multi-Person Video Generation
+<p style="line-height:1.0">
+<font size="2">
+Liangyang Ouyang, Ruicong Liu, Caixin Kang, Yifei Huang, Yoichi Sato <br />
+Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2026 <br />
+<a href="https://arxiv.org/abs/2605.10079">Paper</a> |
+Code (Coming Soon)
+<br />
+</font>
+</p>
+</div>
+</div>
+<br />
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026</div>
 <img src='images/papers/2026-read-the-room.png' alt="Can MLLMs Read the Room?" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -103,24 +151,6 @@ Under Review, 2026 <br />
 </div>
 </div>
 <br />
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div>
-<img src='images/papers/2026-social-director.png' alt="SocialDirector" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-### SocialDirector: Training-Free Social Interaction Control for Multi-Person Video Generation
-<p style="line-height:1.0">
-<font size="2">
-Liangyang Ouyang, Ruicong Liu, Caixin Kang, Yifei Huang, Yoichi Sato <br />
-Under Review, 2026 <br />
-<a href="https://arxiv.org/abs/2605.10079">Paper</a> |
-Code (Coming Soon)
-<br />
-</font>
-</p>
-</div>
-</div>
-<br />
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGIR 2026</div>
 <img src='images/papers/2026-squtr.png' alt="SQuTR" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">

@@ -1,5 +1,12 @@
 // Images and author lists preserved from the original academic profile.
 export const PAPER_DETAILS = {
+  "https://arxiv.org/abs/2610.20195": {
+    "image": "academic/images/papers/2026-social-agent.webp",
+    "authors": "Caixin Kang, Ke Wang, Yuchuan Wu, Xiaoqiang Wang, Ling Li, Bingxue Qiu, Yongbin Li, Yoichi Sato"
+  },
+  "https://ut-vision-social.github.io/#honeyed": {
+    "image": "academic/images/papers/2026-honeyed-words.webp"
+  },
   "https://arxiv.org/abs/2511.18127": {
     "image": "academic/images/papers/2026-corl-hand-forecasting.png",
     "authors": "Ruicong Liu, Yifei Huang, Liangyang Ouyang, Caixin Kang, and Yoichi Sato"

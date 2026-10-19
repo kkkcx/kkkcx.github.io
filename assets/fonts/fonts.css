@@ -39,3 +39,7 @@
 
 /* Additional Noto Sans JP glyphs for the v15 research copy; same bundled OFL. */
 @font-face{font-family:'Studio CJK JP';font-style:normal;font-weight:400;font-display:swap;src:url(studio-cjk-jp-supplement.woff2?v=15) format('woff2');unicode-range:U+30BA,U+30CE,U+4FA1,U+5584,U+6539,U+6C4E,U+8A55}
+
+/* Official Noto subsets for the October 2026 content update; bundled OFL applies. */
+@font-face{font-family:'Studio CJK SC';font-style:normal;font-weight:400;font-display:swap;src:url(noto-sc-content-supplement.ttf?v=20) format('truetype');unicode-range:U+5370,U+6B22,U+8FCE}
+@font-face{font-family:'Studio CJK JP';font-style:normal;font-weight:400;font-display:swap;src:url(noto-jp-content-supplement.ttf?v=20) format('truetype');unicode-range:U+30A8}

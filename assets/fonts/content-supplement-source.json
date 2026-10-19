@@ -1,0 +1,20 @@
+{
+  "purpose": "Missing glyphs in the October 2026 research homepage update",
+  "license": "SIL Open Font License; see OFL-NotoSansCJK.txt and OFL-NotoSansJP.txt",
+  "fonts": [
+    {
+      "file": "noto-sc-content-supplement.ttf",
+      "family": "Noto Sans SC",
+      "characters": "印欢迎",
+      "stylesheet": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC&text=%E5%8D%B0%E6%AC%A2%E8%BF%8E",
+      "source": "https://fonts.gstatic.com/l/font?kit=k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYxVYRFeTJblUt_ToQ&skey=cf0bb10b5602fdc3&v=v41"
+    },
+    {
+      "file": "noto-jp-content-supplement.ttf",
+      "family": "Noto Sans JP",
+      "characters": "エ",
+      "stylesheet": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP&text=%E3%82%A8",
+      "source": "https://fonts.gstatic.com/l/font?kit=-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj75vA1Ve9EA&skey=72472b0eb8793570&v=v57"
+    }
+  ]
+}

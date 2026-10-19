@@ -11,9 +11,12 @@ export const DATA = {
   ],
   bio: [
     `Hi, I am a Ph.D. student at <a href="https://www.ut-vision.org" target="_blank">UT-Vision Lab</a>, the University of Tokyo, supervised by <a href="https://sites.google.com/ut-vision.org/ysato/" target="_blank">Prof. Yoichi Sato</a>.`,
-    `I received my M.E. degree from the School of Artificial Intelligence, Beihang University in 2025, under the guidance of <a href="https://sites.google.com/site/xingxingwei1988/" target="_blank">Prof. Xingxing Wei</a> (<a href="https://rose-vision.github.io/" target="_blank">ROSE Vision Lab</a>), and was co-supervised by <a href="https://www.suhangss.me/" target="_blank">Assoc. Prof. Hang Su</a> and <a href="https://ml.cs.tsinghua.edu.cn/~yinpeng/" target="_blank">Asst. Prof. Yinpeng Dong</a> at Tsinghua University (<a href="https://ml.cs.tsinghua.edu.cn/" target="_blank">TSAIL</a>) during my master's studies. Previously, I received my B.E. degree from the School of Computer Science at Sichuan University in 2022.`
+    `I received my M.E. degree from the School of Artificial Intelligence, Beihang University in 2025, under the guidance of <a href="https://sites.google.com/site/xingxingwei1988/" target="_blank">Prof. Xingxing Wei</a> (<a href="https://rose-vision.github.io/" target="_blank">ROSE Vision Lab</a>), and was co-supervised by <a href="https://www.suhangss.me/" target="_blank">Assoc. Prof. Hang Su</a> and <a href="https://ml.cs.tsinghua.edu.cn/~yinpeng/" target="_blank">Asst. Prof. Yinpeng Dong</a> at Tsinghua University (<a href="https://ml.cs.tsinghua.edu.cn/" target="_blank">TSAIL</a>) during my master's studies. Previously, I received my B.E. degree from the School of Computer Science at Sichuan University in 2022.`,
+    `Explore our latest work on social understanding, generation, and agents at <a href="https://ut-vision-social.github.io/" target="_blank" rel="noreferrer">Social Intelligence @ UT-Vision</a>.`
   ],
   news: [
+    ['Oct 2026', 'Explore our new research homepage: Social Intelligence @ UT-Vision'],
+    ['Sep 2026', 'SocialDirector accepted by NeurIPS 2026'],
     ['Sep 2026', 'One paper accepted by CoRL 2026'],
     ['Aug 2026', 'One paper accepted by EMNLP 2026'],
     ['Jun 2026', 'Two papers accepted by ECCV 2026'],
@@ -57,6 +60,8 @@ export const LINES = [
     title: "Read",
     sub: "Understanding people and events through multimodal perception, social signals, and temporal and causal reasoning.",
     papers: [
+      { t: 'Honeyed Words, Hidden Daggers: Benchmarking and Training LLMs to See Through Mock Politeness',
+        v: 'arXiv soon', y: 2026, p: 'https://ut-vision-social.github.io/#honeyed', resource: 'Project', paperSoon: true },
       { t: 'Can MLLMs Read the Room? A Multimodal Benchmark for Assessing Deception in Multi-Party Social Interactions',
         v: 'EMNLP', y: 2026, p: 'https://arxiv.org/abs/2511.16221', cs: true },
       { t: 'Perception or Prejudice: Can MLLMs Go Beyond First Impressions of Personality?',
@@ -74,7 +79,7 @@ export const LINES = [
     sub: "Exploring controllable image and video generation, with a focus on visual quality and multi-person interaction modeling.",
     papers: [
       { t: 'SocialDirector: Training-Free Social Interaction Control for Multi-Person Video Generation',
-        v: 'Under Review', y: 2026, p: 'https://arxiv.org/abs/2605.10079', cs: true },
+        v: 'NeurIPS', y: 2026, p: 'https://arxiv.org/abs/2605.10079', cs: true },
       { t: 'The Path to Reconciling Quality and Safety in Text-to-Image Generation: Dataset, Method, and Evaluation',
         v: 'ECCV', y: 2026, p: 'https://arxiv.org/abs/2504.14290', topics: ['trust'], cs: true },
     ],
@@ -84,6 +89,8 @@ export const LINES = [
     title: "Together",
     sub: "Learning from continuous experience to advance robotic manipulation, spatial understanding, proactive assistance, and digital humans.",
     papers: [
+      { t: "What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds",
+        v: 'Preprint', y: 2026, p: 'https://arxiv.org/abs/2610.20195', pr: 'https://ut-vision-social.github.io/#hico' },
       { t: 'Predictive Representation Learning for Manipulation via Streaming Egocentric 3D Hand Forecasting',
         v: 'CoRL', y: 2026, p: 'https://arxiv.org/abs/2511.18127',
         announcement: 'https://www.ut-vision.org/post/202611-corl/', toAppear: 'November 2026' },

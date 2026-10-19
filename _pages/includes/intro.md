@@ -2,3 +2,5 @@ Hi, I am a Ph.D. student at [UT-Vision Lab](https://www.ut-vision.org/), the Uni
 Previously, I received my B.E. degree from the School of Computer Science at Sichuan University in 2022.
 
 Currently, my research centers on Social Intelligence. Our goal is to create AI systems that better understand humans while remaining understandable to humans, fostering trustworthy and mutually beneficial collaboration.
+
+Explore our latest work on social understanding, generation, and agents at [Social Intelligence @ UT-Vision](https://ut-vision-social.github.io/).
