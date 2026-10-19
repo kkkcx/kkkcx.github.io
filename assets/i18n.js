@@ -11,7 +11,7 @@ export const MESSAGES={
  "research.allDirections":["All research directions", "全部研究方向", "すべての研究テーマ"],
  "research.all":["All", "全部", "すべて"],
  "research.filter":["Filter by research direction", "按研究方向筛选", "研究テーマで絞り込む"],
- "research.overview":["My research centers on social intelligence, spanning multimodal understanding, human–AI interaction, and generative modeling, alongside model reliability and generalization in real-world settings.", "我目前的研究围绕社会智能展开，关注多模态理解、人机交互与生成建模，并探索模型在真实场景中的可靠性与泛化能力。", "社会的知能を軸に、マルチモーダルな理解、人とAIのインタラクション、生成モデリングを研究しています。実環境におけるモデルの信頼性と汎化能力にも取り組んでいます。"],
+ "research.overview":["My research centers on social intelligence, spanning multimodal understanding, human–AI interaction, generative modeling, and trustworthy AI.", "我的研究围绕社会智能展开，涵盖多模态理解、人机交互、生成建模与可信人工智能。", "社会的知能を軸に、マルチモーダルな理解、人とAIのインタラクション、生成モデリング、信頼できるAIを研究しています。"],
  'site.title':['Caixin Kang · The Research Studio','Caixin Kang · 研究工作室','Caixin Kang · 研究スタジオ'],
  'site.description':['Caixin Kang’s research studio: social intelligence, computer vision, and human-centered AI.','Caixin Kang 的研究工作室：社会智能、计算机视觉与以人为中心的人工智能。','Caixin Kang の研究スタジオ。社会的知能、コンピュータビジョン、人間中心のAIを研究。'],
  'site.studio':['THE RESEARCH STUDIO','研究工作室','研究スタジオ'],
