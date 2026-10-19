@@ -56,8 +56,8 @@ export const DATA = {
 /* papers: t=title, v=venue, y=year, p=paper url, c=code url, cs=code coming soon, pr=project, d=dataset */
 export const LINES = [
   {
-    id: 'read', name: 'READ', color: '#1e4e8c',
-    title: "Read",
+    id: 'read', name: 'UNDERSTANDING', color: '#1e4e8c',
+    title: "Social & Multimodal Understanding",
     sub: "Understanding people and events through multimodal perception, social signals, and temporal and causal reasoning.",
     papers: [
       { t: 'Honeyed Words, Hidden Daggers: Benchmarking and Training LLMs to See Through Mock Politeness',
@@ -74,19 +74,8 @@ export const LINES = [
     ],
   },
   {
-    id: 'act', name: 'ACT', color: '#c8422d',
-    title: "Act",
-    sub: "Exploring controllable image and video generation, with a focus on visual quality and multi-person interaction modeling.",
-    papers: [
-      { t: 'SocialDirector: Training-Free Social Interaction Control for Multi-Person Video Generation',
-        v: 'NeurIPS', y: 2026, p: 'https://arxiv.org/abs/2605.10079', cs: true },
-      { t: 'The Path to Reconciling Quality and Safety in Text-to-Image Generation: Dataset, Method, and Evaluation',
-        v: 'ECCV', y: 2026, p: 'https://arxiv.org/abs/2504.14290', topics: ['trust'], cs: true },
-    ],
-  },
-  {
-    id: 'together', name: 'TOGETHER', color: '#d1a72b',
-    title: "Together",
+    id: 'together', name: 'INTERACTION', color: '#d1a72b',
+    title: "Interactive & Embodied Intelligence",
     sub: "Learning from continuous experience to advance robotic manipulation, spatial understanding, proactive assistance, and digital humans.",
     papers: [
       { t: "What Makes a Social Agent's Interactions Effective? Learning from Verifiable Outcomes in Paired Worlds",
@@ -106,12 +95,12 @@ export const LINES = [
     ],
   },
   {
-    id: 'trust', name: 'TRUST', color: '#63746b',
-    title: "Trust",
+    id: 'trust', name: 'TRUSTWORTHY', color: '#63746b',
+    title: "Trustworthy AI",
     sub: "Evaluating and improving model reliability and generalization under noise, perturbations, and changing real-world conditions.",
     papers: [
       { t: 'Real-world Adversarial Defense against Patch Attacks based on Diffusion Model',
-        v: 'TPAMI', y: 2025, p: 'https://ieeexplore.ieee.org/abstract/document/11114945', c: 'https://github.com/kkkcx/DIFFender' },
+        v: 'TPAMI', y: 2025, p: 'https://ieeexplore.ieee.org/abstract/document/11114945', c: 'https://github.com/kkkcx/DIFFender', topics: ['act'] },
       { t: 'AdvDreamer Unveils: Are Vision-Language Models Truly Ready for Real-World 3D Variations?',
         v: 'ICCV', y: 2025, p: 'https://arxiv.org/pdf/2412.03002', cs: true },
       { t: 'Jailbreaking Multimodal Large Language Models via Shuffle Inconsistency',
@@ -119,7 +108,7 @@ export const LINES = [
       { t: 'OODFace: Benchmarking Robustness of Face Recognition under Common Corruptions and Appearance Variations',
         v: 'Under Review', y: 2025, p: 'https://arxiv.org/pdf/2412.02479', cs: true },
       { t: 'DIFFender: Diffusion-Based Adversarial Defense against Patch Attacks',
-        v: 'ECCV', y: 2024, p: 'https://arxiv.org/pdf/2306.09124', c: 'https://github.com/kkkcx/DIFFender' },
+        v: 'ECCV', y: 2024, p: 'https://arxiv.org/pdf/2306.09124', c: 'https://github.com/kkkcx/DIFFender', topics: ['act'] },
       { t: 'Benchmarking robustness of 3D object detection to common corruptions in autonomous driving',
         v: 'CVPR', y: 2023, p: 'https://arxiv.org/abs/2303.11040', c: 'https://github.com/thu-ml/3D_Corruptions_AD' },
       { t: 'Viewfool: Evaluating the Robustness of Visual Recognition to Adversarial Viewpoints',
@@ -127,6 +116,17 @@ export const LINES = [
         c: 'https://github.com/Heathcliff-saku/ViewFool_' },
       { t: 'SQuTR: A Robustness Benchmark for Spoken Query to Text Retrieval under Acoustic Noise',
         v: 'SIGIR', y: 2026, p: 'https://arxiv.org/abs/2602.12783', c: 'https://github.com/ttoyekk1a/SQuTR-Spoken-Query-to-Text-Retrieval' },
+    ],
+  },
+  {
+    id: 'act', name: 'GENERATION', color: '#c8422d',
+    title: "Generative Modeling",
+    sub: "Exploring image and video generation, multi-person interaction modeling, and diffusion-based visual defense.",
+    papers: [
+      { t: 'SocialDirector: Training-Free Social Interaction Control for Multi-Person Video Generation',
+        v: 'NeurIPS', y: 2026, p: 'https://arxiv.org/abs/2605.10079', cs: true },
+      { t: 'The Path to Reconciling Quality and Safety in Text-to-Image Generation: Dataset, Method, and Evaluation',
+        v: 'ECCV', y: 2026, p: 'https://arxiv.org/abs/2504.14290', topics: ['trust'], cs: true },
     ],
   },
 ];

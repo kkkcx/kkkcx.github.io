@@ -1,0 +1,25 @@
+{
+  "license": "SIL Open Font License; see OFL-NotoSansCJK.txt and OFL-NotoSansJP.txt",
+  "fonts": [
+    {
+      "file": "noto-sc-directions.ttf",
+      "characters": "具扩散身防",
+      "source": "https://fonts.gstatic.com/l/font?kit=k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYxVZxFWS5bAWdH5jKJQ_y3Jkg&skey=cf0bb10b5602fdc3&v=v41"
+    },
+    {
+      "file": "noto-jp-directions.ttf",
+      "characters": "散話",
+      "source": "https://fonts.gstatic.com/l/font?kit=-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj75vA0FKqGyg-0A&skey=72472b0eb8793570&v=v57"
+    },
+    {
+      "file": "noto-sc-gallery.ttf",
+      "characters": "他光均始张彩彼微思悉想把每熟特独细考透",
+      "source": "https://fonts.gstatic.com/l/font?kit=k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYxVURBoapXMedLxqK9N3yHtgIqoE7mNa4qsoUEJxH7CUpLSMfSVUHuGOLtaccIPkMmJSxHEGx4ZXVyW0A&skey=cf0bb10b5602fdc3&v=v41"
+    },
+    {
+      "file": "noto-jp-gallery.ttf",
+      "characters": "々わ個各問均寄屋思慣添潔独近過遠静",
+      "source": "https://fonts.gstatic.com/l/font?kit=-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj75vA5Ve_PSMV7lvmzkLdpLmF04nTep6PQyTdhFnmI7vuqT_f7nV-2qwjAhUNKlhGlMkT3Ky-dg&skey=72472b0eb8793570&v=v57"
+    }
+  ]
+}

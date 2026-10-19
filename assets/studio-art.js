@@ -1,5 +1,6 @@
 // Code-drawn surfaces; museum originals and their image licenses live in art/sources.json.
-export { ARTWORKS } from './gallery-data.js?v=13';
+import {LINES} from './data.js?v=26';
+export { ARTWORKS } from './gallery-data.js?v=26';
 export function loadImage(path){return new Promise((resolve,reject)=>{const img=new Image();img.decoding='async';img.onload=()=>resolve(img);img.onerror=()=>reject(new Error('Could not load '+path));img.src=new URL(path,import.meta.url).href;});}
 export function drawArtwork(g,w,h,image,art){
  g.fillStyle='#f5f1e7';g.fillRect(0,0,w,h);
@@ -25,15 +26,18 @@ export function drawResearchBoard(g,w,h){
  g.fillStyle='#b2c9bb';g.font='22px "DM Sans",sans-serif';g.fillText('Understanding people. Learning to act together.',56,174);
  g.strokeStyle='#c9d4bf66';g.lineWidth=1.5;line(g,[[56,202],[965,202]]);
  const colors=['#a8c6df','#e4a88d','#e8cf86','#b6c8b2'];
- const labels=[['Read','Perception & understanding'],['Act','Generation & action'],['Together','Interaction & cooperation'],['Trust','Robustness & reliability']];
- const coords=[[63,245],[556,245],[63,444],[556,444]];
+ const boardIds=['read','act','together','trust'];
+ const subtitles=['Social & multimodal','Visual synthesis & diffusion','Interactive & embodied AI','Reliability & generalization'];
+ const labels=boardIds.map((id,i)=>{const {name}=LINES.find(l=>l.id===id);return [name[0]+name.slice(1).toLowerCase(),subtitles[i]];});
+ // Keep the board's reading order aligned with the directory: understand, interact, trust, generate.
+ const coords=[[63,245],[556,444],[556,245],[63,444]];
  for(let i=0;i<4;i++){
   const [x,y]=coords[i];g.save();g.translate(x,y);g.strokeStyle=colors[i];g.fillStyle=colors[i];g.lineWidth=2.3;g.lineCap='round';
   if(i===0){g.beginPath();g.moveTo(0,43);g.bezierCurveTo(30,-5,70,-5,100,43);g.bezierCurveTo(70,87,30,87,0,43);g.stroke();g.beginPath();g.arc(50,43,18,0,Math.PI*2);g.stroke();g.beginPath();g.arc(50,43,6,0,Math.PI*2);g.fill();}
   if(i===1){g.setLineDash([3,7]);line(g,[[0,82],[103,82]]);g.setLineDash([]);g.beginPath();g.moveTo(0,63);g.bezierCurveTo(48,69,29,-8,92,21);g.stroke();line(g,[[80,9],[95,21],[78,29]]);for(const [a,b,r] of [[0,63,4],[33,39,5],[61,20,6]]){g.beginPath();g.arc(a,b,r,0,Math.PI*2);g.fill();}}
   if(i===2){for(const x0 of [19,82]){g.beginPath();g.arc(x0,16,12,0,Math.PI*2);g.stroke();g.beginPath();g.arc(x0,58,22,Math.PI,0);g.stroke();}line(g,[[25,82],[77,82],[68,75]]);line(g,[[75,103],[23,103],[32,110]]);}
   if(i===3){g.beginPath();g.moveTo(50,0);g.lineTo(91,16);g.lineTo(85,61);g.quadraticCurveTo(78,86,50,99);g.quadraticCurveTo(22,86,15,61);g.lineTo(9,16);g.closePath();g.stroke();line(g,[[31,47],[45,61],[70,33]]);}
-  g.fillStyle='#e5e8d8';g.font='38px Georgia,serif';g.fillText(labels[i][0],130,43);g.fillStyle='#afc2b5';g.font='18px "DM Sans",sans-serif';g.fillText(labels[i][1],132,78);g.restore();
+  g.fillStyle='#e5e8d8';g.font='38px Georgia,serif';g.fillText(labels[i][0],130,43,285);g.fillStyle='#afc2b5';g.font='18px "DM Sans",sans-serif';g.fillText(labels[i][1],132,78,285);g.restore();
  }
  g.strokeStyle='#c6d0b735';g.lineWidth=1;line(g,[[510,244],[510,569]]);line(g,[[62,412],[964,412]]);
  g.strokeStyle='#d9c891';g.lineWidth=1.5;g.beginPath();g.moveTo(274,645);g.bezierCurveTo(407,657,629,630,753,643);g.stroke();g.fillStyle='#c6d0bc';g.font='italic 23px Georgia,serif';g.fillText('From seeing to sharing a world.',325,630);g.restore();

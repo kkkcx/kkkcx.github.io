@@ -1,11 +1,11 @@
-import {t} from './i18n.js?v=22';
+import {t} from './i18n.js?v=26';
 import {getTokyoClockAngles} from './tokyo-clock.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { LINES } from './data.js?v=22';
+import { LINES } from './data.js?v=26';
 import { createCompanions } from './room-characters.js';
 import { drawMonitor,drawTelevision,prepareCoastlines } from './screen-art.js?v=11';
-import { ARTWORKS,loadImage,drawArtwork,drawArtLabel,drawResearchBoard,drawTokyoSky } from './studio-art.js?v=15';
+import { ARTWORKS,loadImage,drawArtwork,drawArtLabel,drawResearchBoard,drawTokyoSky } from './studio-art.js?v=26';
 
 const canvas=document.querySelector('#room-canvas'),stage=document.querySelector('#room-stage');
 const reduced=matchMedia('(prefers-reduced-motion:reduce)'),small=matchMedia('(max-width:760px)');
@@ -53,21 +53,21 @@ box(.18,4.75,8.6,M.leftWall,-6.08,2.36,0);
 box(12.45,.07,.25,M.white,0,4.77,-4.32);box(.25,.07,8.75,M.white,-6.08,4.77,.02);
 box(12.06,.1,.055,M.ink,0,.105,-4.204);box(.055,.1,8.47,M.ink,-5.963,.105,.02);
 box(.09,4.55,.05,M.red,-5.68,2.38,-4.197);
-// Four Bauhaus-era paintings, selected for each research direction and framed at native proportions.
+// Four paintings by different artists, selected for each research direction and framed at native proportions.
 const gallerySurfaces=[];
 for(let i=0;i<4;i++){
- const art=ARTWORKS[i],group=register(LINES[i].id,LINES[i].name+' / '+LINES[i].title);
+ const art=ARTWORKS[i],line=LINES.find(l=>l.id===art.id),group=register(line.id,line.name+' / '+line.title);
  const pw=768,ph=Math.round(700/art.ratio+68),iw=1.07,ih=iw*ph/pw,fh=ih+.075;
  const x=-4.89+(i%2)*1.35,y=(i<2?4.3:2.39)-fh/2;
  box(1.16,fh,.09,M.wood,x,y,-4.17,group,.009);
  box(1.10,ih+.022,.025,M.ink,x,y,-4.115,group,.003);
  const tex=texture(pw,ph,(g,w,h)=>drawArtwork(g,w,h,null,art),2);
- const mesh=plane(iw,ih,mapped(tex),x,y,-4.097,group);mesh.name='gallery-art-'+LINES[i].id;
- const label=texture(512,128,(g,w,h)=>drawArtLabel(g,w,h,art,LINES[i].name,LINES[i].color),2);
+ const mesh=plane(iw,ih,mapped(tex),x,y,-4.097,group);mesh.name='gallery-art-'+line.id;
+ const label=texture(512,128,(g,w,h)=>drawArtLabel(g,w,h,art,line.name,line.color),2);
  const caption=plane(1.06,.265,mapped(label),x,y-fh/2-.171,-4.185,group);
- caption.name='gallery-caption-'+LINES[i].id;
- caption.userData={section:LINES[i].id,artwork:art};
- gallerySurfaces.push({art,tex,label,pw,ph,image:null});
+ caption.name='gallery-caption-'+line.id;
+ caption.userData={section:line.id,artwork:art};
+ gallerySurfaces.push({art,line,tex,label,pw,ph,image:null});
 }
 // Window scene: fixed city geometry and a legible orange/white Tokyo Tower, day and night.
 function skyline(night){return texture(1536,768,(g,w,h)=>drawTokyoSky(g,w,h,night),2);}
@@ -282,7 +282,16 @@ for(const type of ['pointerup','pointercancel'])canvas.addEventListener(type,e=>
 const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2(),label=document.querySelector('#object-label');let lastPointer=null,pointerDirty=false,down=null,hovered=null;
 function hideLabel(){label.hidden=true;hovered=null;canvas.style.cursor=dragging?'grabbing':'grab';}
 function hitAt(x,y){const r=canvas.getBoundingClientRect();pointer.set((x-r.left)/r.width*2-1,-(y-r.top)/r.height*2+1);raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObject(room,true)[0];let object=hit?.object;while(object&&object!==room){if(object.userData.section)return object;object=object.parent;}return null;}
-function updateHover(){pointerDirty=false;if(!lastPointer||dragging||modeCv)return;hovered=hitAt(lastPointer.x,lastPointer.y);if(!hovered){hideLabel();return;}document.querySelector('#object-name').textContent=hovered.userData.artwork?t('gallery.openWork',{title:hovered.userData.artwork.title}):t('object.'+hovered.userData.section);label.hidden=false;const width=label.offsetWidth,height=label.offsetHeight;label.style.left=Math.min(innerWidth-width-12,lastPointer.x+17)+'px';label.style.top=Math.min(innerHeight-height-12,lastPointer.y+17)+'px';canvas.style.cursor='pointer';}
+function updateHover(){
+ pointerDirty=false;if(!lastPointer||dragging||modeCv)return;
+ hovered=hitAt(lastPointer.x,lastPointer.y);if(!hovered){hideLabel();return;}
+ const {artwork,section}=hovered.userData;
+ // Share the current research titles with navigation and panels, rather than old object aliases.
+ document.querySelector('#object-name').textContent=artwork?t('gallery.openWork',{title:artwork.title}):LINES.some(l=>l.id===section)?t('line.'+section+'.title'):t('object.'+section);
+ label.hidden=false;const width=label.offsetWidth,height=label.offsetHeight;
+ label.style.left=Math.max(12,Math.min(innerWidth-width-12,lastPointer.x+17))+'px';
+ label.style.top=Math.max(12,Math.min(innerHeight-height-12,lastPointer.y+17))+'px';canvas.style.cursor='pointer';
+}
 canvas.addEventListener('pointermove',e=>{lastPointer={x:e.clientX,y:e.clientY};if(down&&Math.hypot(e.clientX-down.x,e.clientY-down.y)>6){dragging=true;hideLabel();}else pointerDirty=true;});
 canvas.addEventListener('pointerdown',e=>{down={x:e.clientX,y:e.clientY};dragging=false;});
 canvas.addEventListener('pointerup',e=>{if(e.button===0&&down&&!dragging&&Math.hypot(e.clientX-down.x,e.clientY-down.y)<7){const hit=hitAt(e.clientX,e.clientY);if(hit?.userData.artwork){const art=hit.userData.artwork;hideLabel();if(window.confirm(t('gallery.confirmOpen',{title:art.title})))window.open(art.artworkUrl,'_blank','noopener,noreferrer');}else if(hit)window.dispatchEvent(new CustomEvent('room-select',{detail:hit.userData.section}));}down=null;dragging=false;pointerDirty=true;});
@@ -314,7 +323,7 @@ requestAnimationFrame(animate);
 // Load locally hosted art without holding up navigation or the first room render.
 function redrawSurface(tex,w,h,draw){const g=tex.image.getContext('2d');g.save();g.setTransform(tex.image.width/w,0,0,tex.image.height/h,0,0);g.clearRect(0,0,w,h);draw(g,w,h);g.restore();tex.needsUpdate=true;}
 const studioAssetState={paintings:0,paper:false,coastlines:false,ready:false,errors:[]};
-const assetJobs=gallerySurfaces.map(surface=>loadImage('art/'+surface.art.file).then(img=>{
+const assetJobs=gallerySurfaces.map(surface=>loadImage('art/'+surface.art.file+'?v='+surface.art.sha256.slice(0,12)).then(img=>{
  surface.image=img;redrawSurface(surface.tex,surface.pw,surface.ph,(g,w,h)=>drawArtwork(g,w,h,img,surface.art));studioAssetState.paintings++;dirty=true;
 }));
 assetJobs.push(loadImage('../academic/images/papers/2026-corl-hand-forecasting.png').then(img=>{paperImage=img;studioAssetState.paper=true;redrawSurface(monitorTexture,1024,640,(g,w,h)=>drawMonitor(g,w,h,paperImage));dirty=true;}));
@@ -323,7 +332,7 @@ assetJobs.push(document.fonts.load('500 24px "DM Sans"'));
 Promise.allSettled(assetJobs).then(results=>{
  studioAssetState.errors=results.filter(r=>r.status==='rejected').map(r=>String(r.reason));
  if(studioAssetState.errors.length)console.warn('Studio artwork loading:',studioAssetState.errors);
- for(let i=0;i<gallerySurfaces.length;i++){const s=gallerySurfaces[i];redrawSurface(s.label,512,128,(g,w,h)=>drawArtLabel(g,w,h,s.art,LINES[i].name,LINES[i].color));}
+ for(let i=0;i<gallerySurfaces.length;i++){const s=gallerySurfaces[i];redrawSurface(s.label,512,128,(g,w,h)=>drawArtLabel(g,w,h,s.art,s.line.name,s.line.color));}
  redrawSurface(boardTexture,1024,724,drawResearchBoard);
  redrawSurface(monitorTexture,1024,640,(g,w,h)=>drawMonitor(g,w,h,paperImage));
  redrawSurface(tvTexture,768,512,(g,w,h)=>drawTelevision(g,w,h,coastlines,animationTime));studioAssetState.ready=true;dirty=true;

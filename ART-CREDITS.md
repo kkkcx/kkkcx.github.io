@@ -1,65 +1,73 @@
-# Art & research gallery — 2026-09-08
+# Gallery — 2026-10-19
 
-Four paintings by Paul Klee and Wassily Kandinsky were selected for the four research entrances. The connections described here are curatorial interpretations for this website, not statements of artistic intent. Original/established English titles and museum records identify the works.
+Four paintings by Paul Klee, Vincent van Gogh, Wassily Kandinsky, and Piet Mondrian. The standalone gallery presents artwork information only. Brief personal associations for the 3D studio are kept separately in `assets/art-research.js`; they are not statements of artistic intent.
 
 ## Image rights and reproduction handling
 
-- Senecio, Several Circles and Counterweights: public-domain paintings, with faithful two-dimensional reproductions used under the PD-Art rationale. The linked Commons records document the public-domain status of each work. This is not a claim that the image providers granted CC0.
-- Growth of Night Plants: the museum object HTML explicitly links CC BY-SA 4.0 for this image. Preserve its attribution, source, and license.
-- The original image files are unedited. Canvas rendering displays each complete image at its native ratio inside a separate mat/frame. No crop, repainting, or overlay on the painting.
-- Current network access to Wikimedia original files timed out. The reproduction source actually used, download URL, image dimensions and hash are recorded explicitly below and in `assets/art/sources.json`; the source must not be described as a Commons download.
+All paintings are displayed in full, at their native aspect ratio, inside separate mats and frames. No cropping or repainting is applied by this site. Active image files come from the specific Wikimedia Commons records below. Klee and Kandinsky use Commons PD-Art records with source-country and US public-domain grounds; Van Gogh has an explicit CC0 reproduction record. Mondrian is retained on the Art Institute of Chicago's artwork-specific public-domain designation and museum open-access policy, not on the incomplete Commons US tag alone.
 
-## read — Paul Klee, Senecio (1922)
-- Original title: Senecio (Baldgreis)
-- Curatorial association: A face emerges from geometric fragments: a visual metaphor for understanding people through perceptual clues.
+This is a dated review of published rights information, not an independent legal opinion or a guarantee of worldwide clearance. Public Domain Mark / PD-Art is a status assessment, not a new license granted by a museum. CC0 only waives rights the releasing party holds; the AIC policy expressly leaves any necessary third-party permissions to the user. Attribution is retained but is not a substitute for permission.
+
+## Paul Klee, Senecio (1922)
+
 - Museum record: https://kunstmuseumbasel.ch/de/museum/blog/2020/58
-- Image source: https://kunstmuseumbasel.ch/de/museum/blog/2020/58
-- Image download: https://cdn.kunstmuseumbasel.ch/website/0_gw11-0001207-19930420-s01_1e6ac762.jpg
+- Image source: https://commons.wikimedia.org/wiki/File:Paul_Klee,_1922,_Senecio,_oil_on_gauze,_40.3_%C3%97_37.4_cm,_Kunstmuseum_Basel.jpg
+- Image download: https://upload.wikimedia.org/wikipedia/commons/3/3f/Paul_Klee%2C_1922%2C_Senecio%2C_oil_on_gauze%2C_40.3_%C3%97_37.4_cm%2C_Kunstmuseum_Basel.jpg
 - Rights reference: https://commons.wikimedia.org/wiki/File:Paul_Klee,_1922,_Senecio,_oil_on_gauze,_40.3_%C3%97_37.4_cm,_Kunstmuseum_Basel.jpg
 - Status/license: Public domain · PD-Art — https://creativecommons.org/publicdomain/mark/1.0/
-- Credit: Paul Klee · Kunstmuseum Basel
-- Local image: `assets/art/klee-senecio.jpg` (2302 × 2499)
-- SHA-256: `754d7ed8e4f989e683764df553aa63bb289a239e3c1558ed9262898af4147165`
+- Credit: Paul Klee · Kunstmuseum Basel; photograph: Martin P. Bühler; reproduction: Wikimedia Commons
+- Local image: `assets/art/klee-senecio.jpg` (3712 × 4046)
+- SHA-256: `f2845ba344d7360c570d412e107c68be838cacf23f6728871284c33cf7f9ab3d`
+- Reviewed 2026-10-19: Commons identifies source-country / US expiry and the faithful reproduction as PD-Art. Replaced the former museum-blog download with the exact file corresponding to this rights record; no image edits by this site.
 
-## act — Paul Klee, Growth of Night Plants (1922)
-- Original title: Wachstum der Nachtpflanzen
-- Curatorial association: Forms grow out of a dark ground: a metaphor for generating structures and anticipating how a world may unfold.
-- Museum record: https://www.sammlung.pinakothek.de/en/artwork/02LAlkBxyk
-- Image source: https://www.sammlung.pinakothek.de/de/artwork/02LAlkBxyk
-- Image download: https://cdn.thenetexperts.info/image/authenticated/s--A83lIv1G--/q_60/artworks/PAUL-KLEE-1879_WACHSTUM-DER-NACHTPFLANZEN-15250_211729_CC-BY-SA_BSTGS.jpg
-- Rights reference: https://www.sammlung.pinakothek.de/en/usage
-- Status/license: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
-- Credit: © Bayerische Staatsgemäldesammlungen
-- Local image: `assets/art/klee-growth.jpg` (864 × 1200)
-- SHA-256: `f39eb7e73a583f9a7ddcc1f5fb047c091c79cc51679288dfb6f3b12f6f56f96d`
+## Vincent van Gogh, The Bedroom (1889)
 
-## together — Wassily Kandinsky, Several Circles (1926)
-- Original title: Einige Kreise
-- Curatorial association: Distinct circles overlap and share a space: a visual metaphor for relationships and interaction among multiple agents.
+- Museum record: https://www.artic.edu/artworks/28560/the-bedroom
+- Image source: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Bedroom_-_1926.417_-_Art_Institute_of_Chicago.jpg
+- Image download: https://upload.wikimedia.org/wikipedia/commons/5/50/Vincent_van_Gogh_-_The_Bedroom_-_1926.417_-_Art_Institute_of_Chicago.jpg
+- Rights reference: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Bedroom_-_1926.417_-_Art_Institute_of_Chicago.jpg
+- Status/license: CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+- Credit: Vincent van Gogh · Art Institute of Chicago, Helen Birch Bartlett Memorial Collection; reproduction: Wikimedia Commons
+- Local image: `assets/art/van-gogh-bedroom.jpg` (2867 × 2250)
+- SHA-256: `9f140320b2b0c8003528770ca39a13db938af4a8df4cb7ff937f61579087c05b`
+
+## Wassily Kandinsky, Several Circles (1926)
+
 - Museum record: https://www.guggenheim.org/artwork/1992
-- Image source: https://www.wassilykandinsky.net/work-49.php
-- Image download: https://www.wassilykandinsky.net/images/works/49.jpg
+- Image source: https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg
+- Image download: https://upload.wikimedia.org/wikipedia/commons/0/0e/Vassily_Kandinsky%2C_1926_-_Several_Circles%2C_Gugg_0910_25.jpg
 - Rights reference: https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg
 - Status/license: Public domain · PD-Art — https://creativecommons.org/publicdomain/mark/1.0/
-- Credit: Wassily Kandinsky · Solomon R. Guggenheim Museum; reproduction: wassilykandinsky.net
+- Credit: Wassily Kandinsky · Solomon R. Guggenheim Museum; reproduction: Wikimedia Commons
 - Local image: `assets/art/kandinsky-circles.jpg` (1800 × 1833)
-- SHA-256: `3c3e1b6fa72f89839703c38b26be5486539a6701b6dfaf04afcc6c0d44286eae`
+- SHA-256: `5d87896098806425b6565d9f89d8d382a456e58d7bbaa82859259328ac69cb57`
+- Reviewed 2026-10-19: Commons identifies source-country / US expiry and the faithful reproduction as PD-Art. Replaced the former third-party-site download with the exact Commons file. Commons records a 2020 tonal adjustment by its contributor; this site makes no further image edits.
 
-## trust — Wassily Kandinsky, Counterweights (1926)
-- Original title: Gegengewichte
-- Curatorial association: Suspended shapes counterbalance one another: a visual metaphor for maintaining stability under competing forces and perturbations.
-- Museum record: https://kultur.muelheim-ruhr.de/sites/default/files/2024-05/PRESSEMAPPE_2024_Wiedereroeffnung_ImHerzenWild_0.pdf
-- Image source: https://www.wassilykandinsky.net/work-372.php
-- Image download: https://www.wassilykandinsky.net/images/works/372.jpg
-- Rights reference: https://commons.wikimedia.org/wiki/File:Kandinsky_-_Counter_weights,_1926.jpg
-- Status/license: Public domain · PD-Art — https://creativecommons.org/publicdomain/mark/1.0/
-- Credit: Wassily Kandinsky · Kunstmuseum Mülheim an der Ruhr; reproduction: wassilykandinsky.net
-- Local image: `assets/art/kandinsky-counterweights.jpg` (987 × 1008)
-- SHA-256: `5ea78a5ab6356a52f0ff562ff7b54e949d2ed24832f5c2dd8616e6e19fa9a181`
+## Piet Mondrian, Composition (No. 1) Gray-Red (1935)
+
+- Museum record: https://www.artic.edu/artworks/65821/composition-no-1-gray-red
+- Image source: https://commons.wikimedia.org/wiki/File:Mondrian_-_Composition_(No._1)_Gray-Red,_1935.jpg
+- Image download: https://upload.wikimedia.org/wikipedia/commons/5/57/Mondrian_-_Composition_(No._1)_Gray-Red%2C_1935.jpg
+- Rights reference: https://commons.wikimedia.org/wiki/File:Mondrian_-_Composition_(No._1)_Gray-Red,_1935.jpg
+- Museum rights policy: https://www.artic.edu/collection-information/open-access/open-access-images
+- Policy text via the museum's public API (read in full): https://api.artic.edu/api/v1/generic-pages/410
+- Museum image-licensing terms (also checked): https://api.artic.edu/api/v1/generic-pages/184
+- Artwork-specific rights record: https://api.artic.edu/api/v1/artworks/65821?fields=id,title,date_display,is_public_domain,copyright_notice,image_id
+- Artwork-specific IIIF manifest: https://api.artic.edu/api/v1/artworks/65821/manifest.json
+- Status/license used: CC0 1.0 · AIC Open Access — https://creativecommons.org/publicdomain/zero/1.0/
+- Credit: Piet Mondrian · Art Institute of Chicago, Gift of Mrs. Gilbert W. Chapman; reproduction: Wikimedia Commons
+- Local image: `assets/art/mondrian-gray-red.jpg` (2909 × 3000)
+- SHA-256: `b8c339c54a839f21eb81d8bd968834b1ca4721c06c29bb7dc75fad4831f9277a`
+
+### Mondrian decision — 2026-10-19
+
+Retain the museum-sourced reproduction. AIC identifies artwork **65821** as `is_public_domain: true`, with `copyright_notice: null`, and provides its individual IIIF manifest. AIC's published policy says it provides these manifests for public-domain artworks and releases its open-access images under CC0 for commercial and noncommercial reuse. This connects the policy to this particular work; the API's generic metadata license is not being mistaken for an image license.
+
+The Commons page still lacks a specific US public-domain tag. That is an incomplete record, not proof of infringement or permission. We have not independently established the original work's US expiry, and the creation date (1935) is not proof of its first publication date. The retention decision relies on the museum's public-domain assessment and open-access terms, which disclaim warranties and do not clear third-party rights. No claim of universally unrestricted copyright status is made.
 
 ## Earlier gallery assets
 
-The previous four NGA Impressionist files remain in `assets/art/` but are no longer displayed. Their CC0 records are retained in `assets/art/sources-impressionist-v11.json`. Policy: https://www.nga.gov/terms-and-notices. Courtesy National Gallery of Art, Washington.
+Earlier selections and their source records are retained in `assets/art/sources-gallery-v13.json` and `assets/art/sources-impressionist-v11.json`. The active Klee and Kandinsky files were replaced during this audit; their old copies, pre-edit metadata, and previous studio fallback are backed up outside the website in the sibling directory `art-rights-before-20261019.FozzJM/`. Historical source records describe the earlier bytes, not the new active files. Other historical artwork files were not removed.
 
 ## Other screen assets
 
@@ -69,7 +77,7 @@ The previous four NGA Impressionist files remain in `assets/art/` but are no lon
 
 ## Artwork navigation and contemporary-artist review (2026-09-08)
 
-Clicking a painting or its frame displays the associated research direction. Clicking its separate caption asks for confirmation before opening the original artwork page in a new tab. The keyboard-accessible original-artwork link in the research panel asks for the same confirmation. The credits page also lists the destinations. Destinations are recorded as `artworkUrl` in `sources.json`. Counterweights links to its individual reproduction page rather than the museum's multi-work PDF; source and rights references remain separate.
+Clicking a painting or its frame displays the associated research direction. Clicking its separate caption asks for confirmation before opening the original artwork page in a new tab. The keyboard-accessible original-artwork link in the research panel asks for the same confirmation. The standalone gallery lists the destinations without research associations. Destinations are recorded as `artworkUrl` in `sources.json`. Source and rights references remain separate.
 
 No Kusama or Nara artwork has been added. Checked the following official terms for possible future use:
 

@@ -43,3 +43,9 @@
 /* Official Noto subsets for the October 2026 content update; bundled OFL applies. */
 @font-face{font-family:'Studio CJK SC';font-style:normal;font-weight:400;font-display:swap;src:url(noto-sc-content-supplement.ttf?v=20) format('truetype');unicode-range:U+5370,U+6B22,U+8FCE}
 @font-face{font-family:'Studio CJK JP';font-style:normal;font-weight:400;font-display:swap;src:url(noto-jp-content-supplement.ttf?v=20) format('truetype');unicode-range:U+30A8}
+/* Research-direction labels; official Noto subsets under the bundled OFL. */
+@font-face{font-family:'Studio CJK SC';font-style:normal;font-weight:400;font-display:swap;src:url(noto-sc-directions.ttf?v=23) format('truetype');unicode-range:U+5177,U+6269,U+6563,U+8EAB,U+9632}
+@font-face{font-family:'Studio CJK JP';font-style:normal;font-weight:400;font-display:swap;src:url(noto-jp-directions.ttf?v=23) format('truetype');unicode-range:U+6563,U+8A71}
+/* Small official Noto subsets for the studio notes and standalone gallery. */
+@font-face{font-family:'Studio CJK SC';font-style:normal;font-weight:400;font-display:swap;src:url(noto-sc-gallery.ttf?v=24) format('truetype');unicode-range:U+4ED6,U+5149,U+5747,U+59CB,U+5F20,U+5F69,U+5F7C,U+5FAE,U+601D,U+6089,U+60F3,U+628A,U+6BCF,U+719F,U+7279,U+72EC,U+7EC6,U+8003,U+900F}
+@font-face{font-family:'Studio CJK JP';font-style:normal;font-weight:400;font-display:swap;src:url(noto-jp-gallery.ttf?v=24) format('truetype');unicode-range:U+3005,U+308F,U+500B,U+5404,U+554F,U+5747,U+5BC4,U+5C4B,U+601D,U+6163,U+6DFB,U+6F54,U+72EC,U+8FD1,U+904E,U+9060,U+9759}

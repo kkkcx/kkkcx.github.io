@@ -1,8 +1,9 @@
 import {createMusicController} from './music-controller.js?v=16';
-import {t,getLanguage,setLanguage} from './i18n.js?v=22';
-import { ARTWORKS } from './gallery-data.js?v=13';
-import { DATA, LINES } from './data.js?v=22';
-import { links,portrait,biography,paper,papersForDirection,news,education,experiences,competitions,honors,services,visitorMap,initVisitorMaps,resume } from './resume-content.js?v=22';
+import {t,getLanguage,setLanguage} from './i18n.js?v=26';
+import { ARTWORKS } from './gallery-data.js?v=26';
+import { ART_RESEARCH } from './art-research.js?v=24';
+import { DATA, LINES } from './data.js?v=26';
+import { links,portrait,biography,paper,papersForDirection,news,education,experiences,competitions,honors,services,visitorMap,initVisitorMaps,resume } from './resume-content.js?v=26';
 const $=s=>document.querySelector(s);
 const mobile=matchMedia('(max-width:760px)'), reduced=matchMedia('(prefers-reduced-motion:reduce)');
 const items=[['overview','The studio'],['about','About me'],['news','News'],['map','Publications'],...LINES.map(l=>[l.id,l.name[0]+l.name.slice(1).toLowerCase()]),['competitions','Competitions'],['experience','Experiences'],['awards','Awards'],['services','Services'],['edu','Educations'],['visitors','Visiting Map']];
@@ -20,8 +21,8 @@ renderIndex();
 function setIndex(open){$('#index').classList.toggle('collapsed',!open);$('#index-toggle').setAttribute('aria-expanded',String(open));$('#index-symbol').textContent=open?'−':'+';}
 setIndex(!mobile.matches);$('#index-toggle').addEventListener('click',()=>setIndex($('#index').classList.contains('collapsed')));
 document.addEventListener('click',e=>{if(cv&&!e.target.closest('#index'))setIndex(false);});
-const galleryNote=id=>{const a=ARTWORKS.find(a=>a.id===id);return `<details class="gallery-note"><summary>${t('gallery.connection')} · <span lang="en">${a.title}</span></summary><p>${a.meaning[getLanguage()]}</p><a class="artwork-link" data-artwork="${id}" href="${a.artworkUrl}" target="_blank" rel="noopener noreferrer">${t('gallery.original')} ↗</a> · <a href="art-credits.html?lang=${getLanguage()}#${id}" target="_blank" rel="noreferrer">${t('footer.art')} ↗</a></details>`;};
-const map=()=>LINES.map(l=>`<button class="line-link" data-section="${l.id}" style="--tone:${l.color}"><i aria-hidden="true"></i><span><b>${l.name}</b>${getLanguage()==='en'?'':`<small>${t('line.'+l.id+'.title')}</small>`}</span><span>↗</span></button>`).join('');
+const galleryNote=id=>{const a=ARTWORKS.find(a=>a.id===id);return `<details class="gallery-note"><summary>${t('gallery.connection')} · <span lang="en">${a.title}</span></summary><p>${ART_RESEARCH[id][getLanguage()]}</p><a class="artwork-link" data-artwork="${id}" href="${a.artworkUrl}" target="_blank" rel="noopener noreferrer">${t('gallery.original')} ↗</a> · <a href="art-credits.html?lang=${getLanguage()}#${id}" target="_blank" rel="noreferrer">${t('footer.art')} ↗</a></details>`;};
+const map=()=>LINES.map(l=>`<button class="line-link" data-section="${l.id}" style="--tone:${l.color}"><i aria-hidden="true"></i><span><b>${t('line.'+l.id+'.title')}</b></span><span>↗</span></button>`).join('');
 $('#resume-content').innerHTML=resume();initVisitorMaps($('#resume-content'));
 function applyPublicationFilter(){
  let first=true;
@@ -79,7 +80,7 @@ reduced.addEventListener('change',e=>{ambientMotion=!e.matches;updateMotion();})
 window.addEventListener('room-ready',updateMotion);updateMotion();
 applyTranslations();
 route();
-import('./room.js?v=22').catch(e=>{console.warn('3D studio unavailable',e);$('#room-loading').hidden=true;$('#room-canvas').hidden=true;$('#room-fallback').hidden=false;$('#light-toggle').disabled=true;$('#room-help').textContent=t('help.fallback');});
+import('./room.js?v=26').catch(e=>{console.warn('3D studio unavailable',e);$('#room-loading').hidden=true;$('#room-canvas').hidden=true;$('#room-fallback').hidden=false;$('#light-toggle').disabled=true;$('#room-help').textContent=t('help.fallback');});
 
 // Language changes only update DOM copy; camera, mode, music and motion are retained.
 function applyTranslations(){

@@ -1,5 +1,4 @@
-// Artwork identities, source records and gallery interpretations. Titles retain the original or established English form.
-// Research associations below are curatorial readings for this website, not claims about the artists’ intentions.
+// Artwork identities and source records only. Studio associations live in art-research.js.
 export const ARTWORKS = [
   {
     "id": "read",
@@ -10,59 +9,51 @@ export const ARTWORKS = [
     "year": 1922,
     "museum": "Kunstmuseum Basel",
     "source": "https://kunstmuseumbasel.ch/de/museum/blog/2020/58",
-    "imageSource": "https://kunstmuseumbasel.ch/de/museum/blog/2020/58",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Paul_Klee,_1922,_Senecio,_oil_on_gauze,_40.3_%C3%97_37.4_cm,_Kunstmuseum_Basel.jpg",
     "rightsSource": "https://commons.wikimedia.org/wiki/File:Paul_Klee,_1922,_Senecio,_oil_on_gauze,_40.3_%C3%97_37.4_cm,_Kunstmuseum_Basel.jpg",
     "license": "Public domain · PD-Art",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "credit": "Paul Klee · Kunstmuseum Basel",
+    "credit": "Paul Klee · Kunstmuseum Basel; photograph: Martin P. Bühler; reproduction: Wikimedia Commons",
     "labelCredit": "Kunstmuseum Basel · PD-Art",
-    "meaning": {
-      "en": "A face emerges from geometric fragments: a visual metaphor for understanding people through perceptual clues.",
-      "zh": "几何色块拼合成人脸，呼应从视觉线索理解人的研究。",
-      "ja": "幾何学的な色面から顔が浮かび上がる構成を、視覚的な手がかりから人を理解する研究に重ねています。"
-    },
-    "download": "https://cdn.kunstmuseumbasel.ch/website/0_gw11-0001207-19930420-s01_1e6ac762.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Paul_Klee%2C_1922%2C_Senecio%2C_oil_on_gauze%2C_40.3_%C3%97_37.4_cm%2C_Kunstmuseum_Basel.jpg",
     "commonsDownload": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Paul_Klee%2C_1922%2C_Senecio%2C_oil_on_gauze%2C_40.3_%C3%97_37.4_cm%2C_Kunstmuseum_Basel.jpg",
-    "sha256": "754d7ed8e4f989e683764df553aa63bb289a239e3c1558ed9262898af4147165",
+    "sha256": "f2845ba344d7360c570d412e107c68be838cacf23f6728871284c33cf7f9ab3d",
     "dimensions": [
-      2302,
-      2499
+      3712,
+      4046
     ],
-    "ratio": 0.9211684673869548,
-    "verified": "2026-09-08",
+    "ratio": 0.9174493326742462,
+    "verified": "2026-10-19",
+    "rightsBasis": "Commons identifies the original as public domain in its source country and the US (PD-old-auto-expired), and the faithful reproduction as PD-Art. The downloaded file now corresponds directly to that record.",
     "imageChanges": "None; complete reproduction displayed proportionally within a separate mat and frame.",
     "artworkUrl": "https://kunstmuseumbasel.ch/de/museum/blog/2020/58"
   },
   {
     "id": "act",
-    "file": "klee-growth.jpg",
-    "artist": "Paul Klee",
-    "title": "Growth of Night Plants",
-    "originalTitle": "Wachstum der Nachtpflanzen",
-    "year": 1922,
-    "museum": "Pinakothek der Moderne, Munich",
-    "source": "https://www.sammlung.pinakothek.de/en/artwork/02LAlkBxyk",
-    "imageSource": "https://www.sammlung.pinakothek.de/de/artwork/02LAlkBxyk",
-    "rightsSource": "https://www.sammlung.pinakothek.de/en/usage",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "credit": "© Bayerische Staatsgemäldesammlungen",
-    "labelCredit": "© Bayerische Staatsgemäldesammlungen · CC BY-SA 4.0",
-    "meaning": {
-      "en": "Forms grow out of a dark ground: a metaphor for generating structures and anticipating how a world may unfold.",
-      "zh": "形态从暗色背景中生长出来，呼应生成结构与预测未来变化。",
-      "ja": "暗い背景から形が生まれ育つ様子を、構造の生成と未来の変化を予測する研究に重ねています。"
-    },
-    "download": "https://cdn.thenetexperts.info/image/authenticated/s--A83lIv1G--/q_60/artworks/PAUL-KLEE-1879_WACHSTUM-DER-NACHTPFLANZEN-15250_211729_CC-BY-SA_BSTGS.jpg",
-    "sha256": "f39eb7e73a583f9a7ddcc1f5fb047c091c79cc51679288dfb6f3b12f6f56f96d",
+    "file": "van-gogh-bedroom.jpg",
+    "artist": "Vincent van Gogh",
+    "title": "The Bedroom",
+    "originalTitle": "The Bedroom",
+    "originalLanguage": "en",
+    "year": 1889,
+    "museum": "Art Institute of Chicago",
+    "source": "https://www.artic.edu/artworks/28560/the-bedroom",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Bedroom_-_1926.417_-_Art_Institute_of_Chicago.jpg",
+    "rightsSource": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Bedroom_-_1926.417_-_Art_Institute_of_Chicago.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "credit": "Vincent van Gogh · Art Institute of Chicago, Helen Birch Bartlett Memorial Collection; reproduction: Wikimedia Commons",
+    "labelCredit": "Art Institute of Chicago · CC0",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/5/50/Vincent_van_Gogh_-_The_Bedroom_-_1926.417_-_Art_Institute_of_Chicago.jpg",
+    "sha256": "9f140320b2b0c8003528770ca39a13db938af4a8df4cb7ff937f61579087c05b",
     "dimensions": [
-      864,
-      1200
+      2867,
+      2250
     ],
-    "ratio": 0.72,
-    "verified": "2026-09-08",
+    "ratio": 1.2742222222222221,
+    "verified": "2026-10-19",
     "imageChanges": "None; complete reproduction displayed proportionally within a separate mat and frame.",
-    "artworkUrl": "https://www.sammlung.pinakothek.de/en/artwork/02LAlkBxyk"
+    "artworkUrl": "https://www.artic.edu/artworks/28560/the-bedroom"
   },
   {
     "id": "together",
@@ -73,59 +64,55 @@ export const ARTWORKS = [
     "year": 1926,
     "museum": "Solomon R. Guggenheim Museum, New York",
     "source": "https://www.guggenheim.org/artwork/1992",
-    "imageSource": "https://www.wassilykandinsky.net/work-49.php",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg",
     "rightsSource": "https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg",
     "license": "Public domain · PD-Art",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "credit": "Wassily Kandinsky · Solomon R. Guggenheim Museum; reproduction: wassilykandinsky.net",
+    "credit": "Wassily Kandinsky · Solomon R. Guggenheim Museum; reproduction: Wikimedia Commons",
     "labelCredit": "Solomon R. Guggenheim Museum · PD-Art",
-    "meaning": {
-      "en": "Distinct circles overlap and share a space: a visual metaphor for relationships and interaction among multiple agents.",
-      "zh": "不同圆形交叠、共处于同一空间，呼应多主体之间的关系与交互。",
-      "ja": "異なる円が重なり、一つの空間を共有する構成を、複数の主体間の関係とインタラクションに重ねています。"
-    },
-    "download": "https://www.wassilykandinsky.net/images/works/49.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Vassily_Kandinsky%2C_1926_-_Several_Circles%2C_Gugg_0910_25.jpg",
     "commonsDownload": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Vassily_Kandinsky%2C_1926_-_Several_Circles%2C_Gugg_0910_25.jpg",
-    "sha256": "3c3e1b6fa72f89839703c38b26be5486539a6701b6dfaf04afcc6c0d44286eae",
+    "sha256": "5d87896098806425b6565d9f89d8d382a456e58d7bbaa82859259328ac69cb57",
     "dimensions": [
       1800,
       1833
     ],
     "ratio": 0.9819967266775778,
-    "verified": "2026-09-08",
+    "verified": "2026-10-19",
+    "rightsBasis": "Commons identifies the original as public domain in its source country and the US (PD-old-auto-expired), and the faithful reproduction as PD-Art. The downloaded file now corresponds directly to that record.",
     "imageChanges": "None; complete reproduction displayed proportionally within a separate mat and frame.",
     "artworkUrl": "https://www.guggenheim.org/artwork/1992"
   },
   {
     "id": "trust",
-    "file": "kandinsky-counterweights.jpg",
-    "artist": "Wassily Kandinsky",
-    "title": "Counterweights",
-    "originalTitle": "Gegengewichte",
-    "year": 1926,
-    "museum": "Kunstmuseum Mülheim an der Ruhr",
-    "source": "https://kultur.muelheim-ruhr.de/sites/default/files/2024-05/PRESSEMAPPE_2024_Wiedereroeffnung_ImHerzenWild_0.pdf",
-    "imageSource": "https://www.wassilykandinsky.net/work-372.php",
-    "rightsSource": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Counter_weights,_1926.jpg",
-    "license": "Public domain · PD-Art",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "credit": "Wassily Kandinsky · Kunstmuseum Mülheim an der Ruhr; reproduction: wassilykandinsky.net",
-    "labelCredit": "Kunstmuseum Mülheim an der Ruhr · PD-Art",
-    "meaning": {
-      "en": "Suspended shapes counterbalance one another: a visual metaphor for maintaining stability under competing forces and perturbations.",
-      "zh": "悬置的几何形体相互制衡，呼应在外部作用与扰动下维持稳定。",
-      "ja": "宙に浮かぶ幾何学的な形が釣り合う構成を、外力や摂動の下で安定性を保つ研究に重ねています。"
-    },
-    "download": "https://www.wassilykandinsky.net/images/works/372.jpg",
-    "commonsDownload": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Kandinsky_-_Counter_weights%2C_1926.jpg",
-    "sha256": "5ea78a5ab6356a52f0ff562ff7b54e949d2ed24832f5c2dd8616e6e19fa9a181",
+    "file": "mondrian-gray-red.jpg",
+    "artist": "Piet Mondrian",
+    "title": "Composition (No. 1) Gray-Red",
+    "originalTitle": "Composition (No. 1) Gray-Red",
+    "originalLanguage": "en",
+    "year": 1935,
+    "museum": "Art Institute of Chicago",
+    "source": "https://www.artic.edu/artworks/65821/composition-no-1-gray-red",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Mondrian_-_Composition_(No._1)_Gray-Red,_1935.jpg",
+    "rightsSource": "https://www.artic.edu/collection-information/open-access/open-access-images",
+    "rightsRecord": "https://api.artic.edu/api/v1/artworks/65821?fields=id,title,date_display,is_public_domain,copyright_notice,image_id",
+    "rightsPolicyApi": "https://api.artic.edu/api/v1/generic-pages/410",
+    "imageManifest": "https://api.artic.edu/api/v1/artworks/65821/manifest.json",
+    "commonsRightsSource": "https://commons.wikimedia.org/wiki/File:Mondrian_-_Composition_(No._1)_Gray-Red,_1935.jpg",
+    "rightsBasis": "Retained on the museum open-access basis: AIC marks artwork 65821 as public domain and provides its public-domain IIIF manifest; its Open Access Images policy releases such museum images under CC0. The Commons record alone lacks a US public-domain tag. This review does not independently establish US expiry or guarantee third-party rights.",
+    "license": "CC0 1.0 · AIC Open Access",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "credit": "Piet Mondrian · Art Institute of Chicago, Gift of Mrs. Gilbert W. Chapman; reproduction: Wikimedia Commons",
+    "labelCredit": "Art Institute of Chicago · CC0",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/5/57/Mondrian_-_Composition_(No._1)_Gray-Red%2C_1935.jpg",
+    "sha256": "b8c339c54a839f21eb81d8bd968834b1ca4721c06c29bb7dc75fad4831f9277a",
     "dimensions": [
-      987,
-      1008
+      2909,
+      3000
     ],
-    "ratio": 0.9791666666666666,
-    "verified": "2026-09-08",
+    "ratio": 0.9696666666666667,
+    "verified": "2026-10-19",
     "imageChanges": "None; complete reproduction displayed proportionally within a separate mat and frame.",
-    "artworkUrl": "https://www.wassilykandinsky.net/work-372.php"
+    "artworkUrl": "https://www.artic.edu/artworks/65821/composition-no-1-gray-red"
   }
 ];

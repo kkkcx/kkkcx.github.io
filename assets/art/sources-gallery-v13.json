@@ -1,0 +1,129 @@
+[
+  {
+    "id": "read",
+    "file": "klee-senecio.jpg",
+    "artist": "Paul Klee",
+    "title": "Senecio",
+    "originalTitle": "Senecio (Baldgreis)",
+    "year": 1922,
+    "museum": "Kunstmuseum Basel",
+    "source": "https://kunstmuseumbasel.ch/de/museum/blog/2020/58",
+    "imageSource": "https://kunstmuseumbasel.ch/de/museum/blog/2020/58",
+    "rightsSource": "https://commons.wikimedia.org/wiki/File:Paul_Klee,_1922,_Senecio,_oil_on_gauze,_40.3_%C3%97_37.4_cm,_Kunstmuseum_Basel.jpg",
+    "license": "Public domain · PD-Art",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "credit": "Paul Klee · Kunstmuseum Basel",
+    "labelCredit": "Kunstmuseum Basel · PD-Art",
+    "meaning": {
+      "en": "A face emerges from geometric fragments: a visual metaphor for understanding people through perceptual clues.",
+      "zh": "几何色块拼合成人脸，呼应从视觉线索理解人的研究。",
+      "ja": "幾何学的な色面から顔が浮かび上がる構成を、視覚的な手がかりから人を理解する研究に重ねています。"
+    },
+    "download": "https://cdn.kunstmuseumbasel.ch/website/0_gw11-0001207-19930420-s01_1e6ac762.jpg",
+    "commonsDownload": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Paul_Klee%2C_1922%2C_Senecio%2C_oil_on_gauze%2C_40.3_%C3%97_37.4_cm%2C_Kunstmuseum_Basel.jpg",
+    "sha256": "754d7ed8e4f989e683764df553aa63bb289a239e3c1558ed9262898af4147165",
+    "dimensions": [
+      2302,
+      2499
+    ],
+    "ratio": 0.9211684673869548,
+    "verified": "2026-09-08",
+    "imageChanges": "None; complete reproduction displayed proportionally within a separate mat and frame.",
+    "artworkUrl": "https://kunstmuseumbasel.ch/de/museum/blog/2020/58"
+  },
+  {
+    "id": "act",
+    "file": "klee-growth.jpg",
+    "artist": "Paul Klee",
+    "title": "Growth of Night Plants",
+    "originalTitle": "Wachstum der Nachtpflanzen",
+    "year": 1922,
+    "museum": "Pinakothek der Moderne, Munich",
+    "source": "https://www.sammlung.pinakothek.de/en/artwork/02LAlkBxyk",
+    "imageSource": "https://www.sammlung.pinakothek.de/de/artwork/02LAlkBxyk",
+    "rightsSource": "https://www.sammlung.pinakothek.de/en/usage",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "© Bayerische Staatsgemäldesammlungen",
+    "labelCredit": "© Bayerische Staatsgemäldesammlungen · CC BY-SA 4.0",
+    "meaning": {
+      "en": "Forms grow out of a dark ground: a metaphor for generating structures and anticipating how a world may unfold.",
+      "zh": "形态从暗色背景中生长出来，呼应生成结构与预测未来变化。",
+      "ja": "暗い背景から形が生まれ育つ様子を、構造の生成と未来の変化を予測する研究に重ねています。"
+    },
+    "download": "https://cdn.thenetexperts.info/image/authenticated/s--A83lIv1G--/q_60/artworks/PAUL-KLEE-1879_WACHSTUM-DER-NACHTPFLANZEN-15250_211729_CC-BY-SA_BSTGS.jpg",
+    "sha256": "f39eb7e73a583f9a7ddcc1f5fb047c091c79cc51679288dfb6f3b12f6f56f96d",
+    "dimensions": [
+      864,
+      1200
+    ],
+    "ratio": 0.72,
+    "verified": "2026-09-08",
+    "imageChanges": "None; complete reproduction displayed proportionally within a separate mat and frame.",
+    "artworkUrl": "https://www.sammlung.pinakothek.de/en/artwork/02LAlkBxyk"
+  },
+  {
+    "id": "together",
+    "file": "kandinsky-circles.jpg",
+    "artist": "Wassily Kandinsky",
+    "title": "Several Circles",
+    "originalTitle": "Einige Kreise",
+    "year": 1926,
+    "museum": "Solomon R. Guggenheim Museum, New York",
+    "source": "https://www.guggenheim.org/artwork/1992",
+    "imageSource": "https://www.wassilykandinsky.net/work-49.php",
+    "rightsSource": "https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg",
+    "license": "Public domain · PD-Art",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "credit": "Wassily Kandinsky · Solomon R. Guggenheim Museum; reproduction: wassilykandinsky.net",
+    "labelCredit": "Solomon R. Guggenheim Museum · PD-Art",
+    "meaning": {
+      "en": "Distinct circles overlap and share a space: a visual metaphor for relationships and interaction among multiple agents.",
+      "zh": "不同圆形交叠、共处于同一空间，呼应多主体之间的关系与交互。",
+      "ja": "異なる円が重なり、一つの空間を共有する構成を、複数の主体間の関係とインタラクションに重ねています。"
+    },
+    "download": "https://www.wassilykandinsky.net/images/works/49.jpg",
+    "commonsDownload": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Vassily_Kandinsky%2C_1926_-_Several_Circles%2C_Gugg_0910_25.jpg",
+    "sha256": "3c3e1b6fa72f89839703c38b26be5486539a6701b6dfaf04afcc6c0d44286eae",
+    "dimensions": [
+      1800,
+      1833
+    ],
+    "ratio": 0.9819967266775778,
+    "verified": "2026-09-08",
+    "imageChanges": "None; complete reproduction displayed proportionally within a separate mat and frame.",
+    "artworkUrl": "https://www.guggenheim.org/artwork/1992"
+  },
+  {
+    "id": "trust",
+    "file": "kandinsky-counterweights.jpg",
+    "artist": "Wassily Kandinsky",
+    "title": "Counterweights",
+    "originalTitle": "Gegengewichte",
+    "year": 1926,
+    "museum": "Kunstmuseum Mülheim an der Ruhr",
+    "source": "https://kultur.muelheim-ruhr.de/sites/default/files/2024-05/PRESSEMAPPE_2024_Wiedereroeffnung_ImHerzenWild_0.pdf",
+    "imageSource": "https://www.wassilykandinsky.net/work-372.php",
+    "rightsSource": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Counter_weights,_1926.jpg",
+    "license": "Public domain · PD-Art",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "credit": "Wassily Kandinsky · Kunstmuseum Mülheim an der Ruhr; reproduction: wassilykandinsky.net",
+    "labelCredit": "Kunstmuseum Mülheim an der Ruhr · PD-Art",
+    "meaning": {
+      "en": "Suspended shapes counterbalance one another: a visual metaphor for maintaining stability under competing forces and perturbations.",
+      "zh": "悬置的几何形体相互制衡，呼应在外部作用与扰动下维持稳定。",
+      "ja": "宙に浮かぶ幾何学的な形が釣り合う構成を、外力や摂動の下で安定性を保つ研究に重ねています。"
+    },
+    "download": "https://www.wassilykandinsky.net/images/works/372.jpg",
+    "commonsDownload": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Kandinsky_-_Counter_weights%2C_1926.jpg",
+    "sha256": "5ea78a5ab6356a52f0ff562ff7b54e949d2ed24832f5c2dd8616e6e19fa9a181",
+    "dimensions": [
+      987,
+      1008
+    ],
+    "ratio": 0.9791666666666666,
+    "verified": "2026-09-08",
+    "imageChanges": "None; complete reproduction displayed proportionally within a separate mat and frame.",
+    "artworkUrl": "https://www.wassilykandinsky.net/work-372.php"
+  }
+]
