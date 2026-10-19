@@ -1,9 +1,9 @@
-import {t,getLanguage,localDate} from './i18n.js?v=21';
-import {translatedBio,translatedEducation,translatedAwards,translatedNews} from './content-translations.js?v=21';
+import {t,getLanguage,localDate} from './i18n.js?v=22';
+import {translatedBio,translatedEducation,translatedAwards,translatedNews} from './content-translations.js?v=22';
 import {symbol} from './ui-icons.js';
-import {DATA,LINES} from './data.js?v=21';
-import {PAPER_DETAILS} from './paper-details.js?v=21';
-import {PUBLICATION_ORDER,NEWS,EXPERIENCES,COMPETITIONS} from './profile-details.js?v=21';
+import {DATA,LINES} from './data.js?v=22';
+import {PAPER_DETAILS} from './paper-details.js?v=22';
+import {PUBLICATION_ORDER,NEWS,EXPERIENCES,COMPETITIONS} from './profile-details.js?v=22';
 const iconPaths={
  Email:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
  Scholar:'<path d="m2 9 10-6 10 6-10 6L2 9Z"/><path d="M6 12v5c3 3 9 3 12 0v-5M22 9v8"/>',
